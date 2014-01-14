@@ -1,11 +1,14 @@
 <?php
 
-return //CMap::mergeArray(
-        //require(dirname(__FILE__).'/../../../../core/config/main.php'),
+return CMap::mergeArray(
+        require(dirname(__FILE__).'/../../../../core/config/main.php'),
         array(
             'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
             'defaultController' => 'Site',
             'theme' => 'basic',
+            'preload' => array(
+                'bootstrap',
+            ),
             'import' => array(
                 'application.components.*',
                 'application.models.*',
@@ -15,8 +18,12 @@ return //CMap::mergeArray(
             'components' => array(
                 'themeManager' => array(
                     'class' => 'CThemeManager',
-                    //'basePath' => 'application.themes',
-                    //'baseUrl' => 'www/themes',                  
+                //'basePath' => 'application.themes',
+                //'baseUrl' => 'www/themes',                  
+                ),
+                
+                'bootstrap' => array(
+                    'class' => 'core.extensions.bootstrap.components.Bootstrap',
                 ),
                 'widgetFactory' => array(
                     'enableSkin' => true,
@@ -28,6 +35,6 @@ return //CMap::mergeArray(
                     'errorAction' => 'api/error',
                 ),
             ),
-        //     )
+            )
 );
 ?>

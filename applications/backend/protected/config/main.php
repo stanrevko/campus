@@ -34,7 +34,7 @@ return CMap::mergeArray(
                 ),
                 
                 'bootstrap' => array(
-                    'class' => 'application.extensions.bootstrap.components.Bootstrap',
+                    'class' => 'core.extensions.bootstrap.components.Bootstrap',
                 ),
         ),
     )
