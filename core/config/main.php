@@ -34,7 +34,10 @@ return array(
     'modules' => array(
         'gii' => array(
             'class' => 'system.gii.GiiModule',
-            'password' => 'pass123'
+            'password' => 'pass123',
+            'generatorPaths'=>array(
+                'core.extensions.bootstrap.gii',
+            ),
         ),
     ),
 );

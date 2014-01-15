@@ -334,3 +334,203 @@ Stack trace:
 #7 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
 #8 D:\www\campus\applications\webservice\index.php(8): CWebApplication->run()
 REQUEST_URI=/
+2014/01/14 23:06:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "sdf".' in D:\www\campus\framework\web\CController.php:484
+Stack trace:
+#0 D:\www\campus\framework\web\CController.php(271): CController->missingAction('sdf')
+#1 D:\www\campus\framework\web\CWebApplication.php(276): CController->run('sdf')
+#2 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController('site/sdf')
+#3 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/sdf
+---
+2014/01/14 23:07:08 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "2".' in D:\www\campus\framework\web\CController.php:879
+Stack trace:
+#0 D:\www\campus\framework\web\CController.php(783): CController->renderPartial('2', NULL, true)
+#1 D:\www\campus\applications\webservice\protected\controllers\SiteController.php(10): CController->render('2')
+#2 D:\www\campus\framework\web\actions\CInlineAction.php(50): SiteController->actionTest()
+#3 D:\www\campus\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\www\campus\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\www\campus\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\www\campus\framework\web\CWebApplication.php(276): CController->run('test')
+#7 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController('site/test')
+#8 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#10 {main}
+REQUEST_URI=/site/test
+---
+2014/01/14 23:09:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in D:\www\campus\framework\web\CController.php:484
+Stack trace:
+#0 D:\www\campus\framework\web\CController.php(271): CController->missingAction('login')
+#1 D:\www\campus\framework\web\CWebApplication.php(276): CController->run('login')
+#2 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController('site/login')
+#3 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/login
+---
+2014/01/14 23:09:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in D:\www\campus\framework\web\CController.php:484
+Stack trace:
+#0 D:\www\campus\framework\web\CController.php(271): CController->missingAction('login')
+#1 D:\www\campus\framework\web\CWebApplication.php(276): CController->run('login')
+#2 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController('site/login')
+#3 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/login
+---
+2014/01/14 23:09:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in D:\www\campus\framework\web\CController.php:484
+Stack trace:
+#0 D:\www\campus\framework\web\CController.php(271): CController->missingAction('login')
+#1 D:\www\campus\framework\web\CWebApplication.php(276): CController->run('login')
+#2 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController('site/login')
+#3 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/login
+---
+2014/01/14 23:23:04 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.TbGridView" is invalid. Make sure it points to an existing PHP file.' in D:\www\campus\framework\YiiBase.php:318
+Stack trace:
+#0 D:\www\campus\framework\web\CWidgetFactory.php(147): YiiBase::import('bootstrap.widge...', true)
+#1 D:\www\campus\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(MaterialController), 'bootstrap.widge...', Array)
+#2 D:\www\campus\framework\web\CBaseController.php(173): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 D:\www\campus\applications\webservice\protected\views\material\admin.php(64): CBaseController->widget('bootstrap.widge...', Array)
+#4 D:\www\campus\framework\web\CBaseController.php(127): require('D:\www\campus\a...')
+#5 D:\www\campus\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\www\campus\a...', Array, true)
+#6 D:\www\campus\framework\web\CController.php(870): CBaseController->renderFile('D:\www\campus\a...', Array, true)
+#7 D:\www\campus\framework\web\CController.php(783): CController->renderPartial('admin', Array, true)
+#8 D:\www\campus\applications\webservice\protected\controllers\MaterialController.php(144): CController->render('admin', Array)
+#9 D:\www\campus\framework\web\actions\CInlineAction.php(50): MaterialController->actionAdmin()
+#10 D:\www\campus\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 D:\www\campus\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 D:\www\campus\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\www\campus\framework\web\CWebApplication.php(276): CController->run('admin')
+#14 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController('material/admin/...')
+#15 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php/material/admin/Material_sort/author_id
+HTTP_REFERER=http://campus.dev/material/admin
+---
+2014/01/14 23:27:58 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.TbGridView" is invalid. Make sure it points to an existing PHP file.' in D:\www\campus\framework\YiiBase.php:318
+Stack trace:
+#0 D:\www\campus\framework\web\CWidgetFactory.php(147): YiiBase::import('bootstrap.widge...', true)
+#1 D:\www\campus\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(MaterialController), 'bootstrap.widge...', Array)
+#2 D:\www\campus\framework\web\CBaseController.php(173): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 D:\www\campus\applications\webservice\protected\views\material\admin.php(64): CBaseController->widget('bootstrap.widge...', Array)
+#4 D:\www\campus\framework\web\CBaseController.php(127): require('D:\www\campus\a...')
+#5 D:\www\campus\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\www\campus\a...', Array, true)
+#6 D:\www\campus\framework\web\CController.php(870): CBaseController->renderFile('D:\www\campus\a...', Array, true)
+#7 D:\www\campus\framework\web\CController.php(783): CController->renderPartial('admin', Array, true)
+#8 D:\www\campus\applications\webservice\protected\controllers\MaterialController.php(144): CController->render('admin', Array)
+#9 D:\www\campus\framework\web\actions\CInlineAction.php(50): MaterialController->actionAdmin()
+#10 D:\www\campus\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 D:\www\campus\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 D:\www\campus\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\www\campus\framework\web\CWebApplication.php(276): CController->run('admin')
+#14 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController('material/admin')
+#15 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php/material/admin
+---
+2014/01/14 23:38:51 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.gii.bootstrap.BootstrapCode" is invalid. Make sure it points to an existing directory or file.' in D:\www\campus\framework\YiiBase.php:343
+Stack trace:
+#0 D:\www\campus\framework\gii\CCodeGenerator.php(151): YiiBase::import('bootstrap.gii.b...', true)
+#1 D:\www\campus\framework\gii\CCodeGenerator.php(64): CCodeGenerator->prepare()
+#2 D:\www\campus\framework\web\actions\CInlineAction.php(50): CCodeGenerator->actionIndex()
+#3 D:\www\campus\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\www\campus\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\www\campus\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\www\campus\framework\web\CWebApplication.php(276): CController->run('')
+#7 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController('gii/bootstrap')
+#8 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/gii/bootstrap
+HTTP_REFERER=http://campus.dev/index.php/gii/crud
+---
+2014/01/14 23:39:12 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.gii.bootstrap.BootstrapCode" is invalid. Make sure it points to an existing directory or file.' in D:\www\campus\framework\YiiBase.php:343
+Stack trace:
+#0 D:\www\campus\framework\gii\CCodeGenerator.php(151): YiiBase::import('bootstrap.gii.b...', true)
+#1 D:\www\campus\framework\gii\CCodeGenerator.php(64): CCodeGenerator->prepare()
+#2 D:\www\campus\framework\web\actions\CInlineAction.php(50): CCodeGenerator->actionIndex()
+#3 D:\www\campus\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\www\campus\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\www\campus\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\www\campus\framework\web\CWebApplication.php(276): CController->run('')
+#7 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController('gii/bootstrap')
+#8 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/gii/bootstrap
+HTTP_REFERER=http://campus.dev/index.php/gii/crud
+---
+2014/01/14 23:39:18 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.gii.bootstrap.BootstrapCode" is invalid. Make sure it points to an existing directory or file.' in D:\www\campus\framework\YiiBase.php:343
+Stack trace:
+#0 D:\www\campus\framework\gii\CCodeGenerator.php(151): YiiBase::import('bootstrap.gii.b...', true)
+#1 D:\www\campus\framework\gii\CCodeGenerator.php(64): CCodeGenerator->prepare()
+#2 D:\www\campus\framework\web\actions\CInlineAction.php(50): CCodeGenerator->actionIndex()
+#3 D:\www\campus\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\www\campus\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\www\campus\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\www\campus\framework\web\CWebApplication.php(276): CController->run('')
+#7 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController('gii/bootstrap')
+#8 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/gii/bootstrap
+HTTP_REFERER=http://campus.dev/index.php/gii/crud
+---
+2014/01/14 23:40:15 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.gii.bootstrap.BootstrapCode" is invalid. Make sure it points to an existing directory or file.' in D:\www\campus\framework\YiiBase.php:343
+Stack trace:
+#0 D:\www\campus\framework\gii\CCodeGenerator.php(151): YiiBase::import('bootstrap.gii.b...', true)
+#1 D:\www\campus\framework\gii\CCodeGenerator.php(64): CCodeGenerator->prepare()
+#2 D:\www\campus\framework\web\actions\CInlineAction.php(50): CCodeGenerator->actionIndex()
+#3 D:\www\campus\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\www\campus\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\www\campus\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\www\campus\framework\web\CWebApplication.php(276): CController->run('')
+#7 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController('gii/bootstrap')
+#8 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/gii/bootstrap
+HTTP_REFERER=http://campus.dev/index.php/gii/module
+---
+2014/01/14 23:48:34 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.gii.bootstrap.BootstrapCode" is invalid. Make sure it points to an existing directory or file.' in D:\www\campus\framework\YiiBase.php:343
+Stack trace:
+#0 D:\www\campus\framework\gii\CCodeGenerator.php(151): YiiBase::import('bootstrap.gii.b...', true)
+#1 D:\www\campus\framework\gii\CCodeGenerator.php(64): CCodeGenerator->prepare()
+#2 D:\www\campus\framework\web\actions\CInlineAction.php(50): CCodeGenerator->actionIndex()
+#3 D:\www\campus\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\www\campus\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\www\campus\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\www\campus\framework\web\CWebApplication.php(276): CController->run('')
+#7 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController('gii/bootstrap')
+#8 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php/gii/bootstrap
+HTTP_REFERER=http://campus.dev/index.php/gii/module
+---
+2014/01/15 00:12:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "post.html".' in D:\www\campus\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController('post.html')
+#1 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#3 {main}
+REQUEST_URI=/post.html
+HTTP_REFERER=http://campus.dev/
+---
+2014/01/15 09:09:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "product.html".' in D:\www\campus\framework\web\CController.php:484
+Stack trace:
+#0 D:\www\campus\framework\web\CController.php(271): CController->missingAction('product.html')
+#1 D:\www\campus\framework\web\CWebApplication.php(276): CController->run('product.html')
+#2 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController('site/product.ht...')
+#3 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/product.html
+HTTP_REFERER=http://campus.dev/site/admin
+---

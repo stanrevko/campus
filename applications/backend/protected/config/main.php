@@ -21,6 +21,7 @@ return CMap::mergeArray(
                 'user' => array(
                     'loginUrl' => array('site/login'),
                     'StateKeyPrefix' => '_backend',
+                       'allowAutoLogin' => true,
                 ),
                 
               
@@ -28,13 +29,10 @@ return CMap::mergeArray(
                 'logger' => array(
                     'class'=> 'application.components.AdminLogger'
                 ),
-                
-                'user' => array(
-                    'allowAutoLogin' => true,
-                ),
+                             
                 
                 'bootstrap' => array(
-                    'class' => 'core.extensions.bootstrap.components.Bootstrap',
+                    'class' => 'application.extensions.bootstrap.components.Bootstrap',
                 ),
         ),
     )
