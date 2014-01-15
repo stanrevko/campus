@@ -534,3 +534,119 @@ Stack trace:
 REQUEST_URI=/site/product.html
 HTTP_REFERER=http://campus.dev/site/admin
 ---
+2014/01/15 22:52:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\www\campus\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/01/15 23:06:15 [error] [exception.CException] exception 'CException' with message 'Property "CUrlManager.showIndexFile" is not defined.' in D:\www\campus\framework\base\CComponent.php:174
+Stack trace:
+#0 D:\www\campus\framework\YiiBase.php(222): CComponent->__set('showIndexFile', false)
+#1 D:\www\campus\framework\base\CModule.php(387): YiiBase::createComponent(Array)
+#2 D:\www\campus\framework\base\CApplication.php(503): CModule->getComponent('urlManager')
+#3 D:\www\campus\framework\web\CWebApplication.php(134): CApplication->getUrlManager()
+#4 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#6 {main}
+REQUEST_URI=/site/admin
+---
+2014/01/15 23:06:17 [error] [exception.CException] exception 'CException' with message 'Property "CUrlManager.showIndexFile" is not defined.' in D:\www\campus\framework\base\CComponent.php:174
+Stack trace:
+#0 D:\www\campus\framework\YiiBase.php(222): CComponent->__set('showIndexFile', false)
+#1 D:\www\campus\framework\base\CModule.php(387): YiiBase::createComponent(Array)
+#2 D:\www\campus\framework\base\CApplication.php(503): CModule->getComponent('urlManager')
+#3 D:\www\campus\framework\web\CWebApplication.php(134): CApplication->getUrlManager()
+#4 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#6 {main}
+REQUEST_URI=/site/admin
+---
+2014/01/15 23:09:10 [error] [php] Non-static method FiltersHelper::getTables() should not be called statically, assuming $this from incompatible context (D:\www\campus\applications\webservice\protected\controllers\SiteController.php:51)
+Stack trace:
+#0 D:\www\campus\framework\web\CController.php(287): SiteController->runAction()
+#1 D:\www\campus\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#2 D:\www\campus\framework\web\CWebApplication.php(276): SiteController->run()
+#3 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\www\campus\applications\webservice\index.php(8): CWebApplication->run()
+REQUEST_URI=/site/test
+2014/01/15 23:09:11 [error] [php] Non-static method FiltersHelper::getTables() should not be called statically, assuming $this from incompatible context (D:\www\campus\applications\webservice\protected\controllers\SiteController.php:51)
+Stack trace:
+#0 D:\www\campus\framework\web\CController.php(287): SiteController->runAction()
+#1 D:\www\campus\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#2 D:\www\campus\framework\web\CWebApplication.php(276): SiteController->run()
+#3 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\www\campus\applications\webservice\index.php(8): CWebApplication->run()
+REQUEST_URI=/site/test
+2014/01/15 23:10:43 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'campus.$tablename' doesn't exist. The SQL statement executed was: SELECT *
+FROM `$tableName`.
+2014/01/15 23:10:43 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'campus.$tablename' doesn't exist. The SQL statement executed was: SELECT *
+FROM `$tableName`' in D:\www\campus\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\www\campus\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\www\campus\applications\webservice\protected\models\FiltersHelper.php(19): CDbCommand->queryAll()
+#2 D:\www\campus\applications\webservice\protected\models\FiltersHelper.php(26): FiltersHelper::getTableContent('subject')
+#3 D:\www\campus\applications\webservice\protected\controllers\SiteController.php(51): FiltersHelper::getTables()
+#4 D:\www\campus\framework\web\actions\CInlineAction.php(50): SiteController->actionTest()
+#5 D:\www\campus\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 D:\www\campus\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 D:\www\campus\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\www\campus\framework\web\CWebApplication.php(276): CController->run('test')
+#9 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController('site/test')
+#10 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#12 {main}
+REQUEST_URI=/site/test
+---
+2014/01/15 23:10:59 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'campus.{subject}' doesn't exist. The SQL statement executed was: SELECT *
+FROM `{subject}`.
+2014/01/15 23:10:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'campus.{subject}' doesn't exist. The SQL statement executed was: SELECT *
+FROM `{subject}`' in D:\www\campus\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\www\campus\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\www\campus\applications\webservice\protected\models\FiltersHelper.php(19): CDbCommand->queryAll()
+#2 D:\www\campus\applications\webservice\protected\models\FiltersHelper.php(26): FiltersHelper::getTableContent('subject')
+#3 D:\www\campus\applications\webservice\protected\controllers\SiteController.php(51): FiltersHelper::getTables()
+#4 D:\www\campus\framework\web\actions\CInlineAction.php(50): SiteController->actionTest()
+#5 D:\www\campus\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 D:\www\campus\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 D:\www\campus\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\www\campus\framework\web\CWebApplication.php(276): CController->run('test')
+#9 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController('site/test')
+#10 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#12 {main}
+REQUEST_URI=/site/test
+---
+2014/01/15 23:57:21 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "createCommand".' in D:\www\campus\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\www\campus\applications\webservice\protected\models\FiltersHelper.php(20): CComponent->__call('createCommand', Array)
+#1 D:\www\campus\applications\webservice\protected\models\FiltersHelper.php(20): CWebApplication->createCommand()
+#2 D:\www\campus\applications\webservice\protected\models\FiltersHelper.php(32): FiltersHelper::getTableContent('subject')
+#3 D:\www\campus\applications\webservice\protected\controllers\SiteController.php(51): FiltersHelper::getTables()
+#4 D:\www\campus\framework\web\actions\CInlineAction.php(50): SiteController->actionTest()
+#5 D:\www\campus\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 D:\www\campus\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 D:\www\campus\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\www\campus\framework\web\CWebApplication.php(276): CController->run('test')
+#9 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController('site/test')
+#10 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#12 {main}
+REQUEST_URI=/site/test
+---
+2014/01/16 00:01:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "post.html".' in D:\www\campus\framework\web\CController.php:484
+Stack trace:
+#0 D:\www\campus\framework\web\CController.php(271): CController->missingAction('post.html')
+#1 D:\www\campus\framework\web\CWebApplication.php(276): CController->run('post.html')
+#2 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController('site/post.html')
+#3 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/post.html
+HTTP_REFERER=http://campus.dev/site/
+---

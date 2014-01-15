@@ -1,8 +1,7 @@
 <?php
 
 return CMap::mergeArray(
-        require(dirname(__FILE__).'/../../../../core/config/main.php'),
-        array(
+                require(dirname(__FILE__) . '/../../../../core/config/main.php'), array(
             'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
             'defaultController' => 'Site',
             'theme' => 'basic',
@@ -21,7 +20,6 @@ return CMap::mergeArray(
                 //'basePath' => 'application.themes',
                 //'baseUrl' => 'www/themes',                  
                 ),
-                
                 'bootstrap' => array(
                     'class' => 'core.extensions.bootstrap.components.Bootstrap',
                 ),
@@ -30,11 +28,17 @@ return CMap::mergeArray(
                 ),
                 'urlManager' => array(
                     'urlFormat' => 'path',
+                    'showScriptName' => false,
+                    'caseSensitive' => false,
                 ),
                 'errorHandler' => array(
                     'errorAction' => 'api/error',
                 ),
+                'cache' => array(
+                    'class' => 'system.caching.CFileCache',
+                    
+                ),
             ),
-            )
+                )
 );
 ?>
