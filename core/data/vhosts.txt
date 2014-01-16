@@ -1,0 +1,13 @@
+
+<VirtualHost *:80>    
+    DocumentRoot "/www/campus/applications/webservice"
+    ServerName campus.dev
+    ServerAlias www.campus.dev
+</VirtualHost>
+
+
+<VirtualHost *:80>    
+    DocumentRoot "/www/campus/applications/backend"
+    ServerName admin.campus.dev
+    ServerAlias www.admin.campus.dev
+</VirtualHost>
