@@ -534,3 +534,29 @@ Stack trace:
 REQUEST_URI=/site/product.html
 HTTP_REFERER=http://campus.dev/site/admin
 ---
+2014/01/15 13:28:33 [error] [php] include(FrontController.php): failed to open stream: No such file or directory (D:\www\campus\framework\YiiBase.php:418)
+Stack trace:
+#0 D:\www\campus\applications\webservice\protected\controllers\SiteController.php(2): spl_autoload_call()
+#1 D:\www\campus\framework\web\CWebApplication.php(344): require()
+#2 D:\www\campus\framework\web\CWebApplication.php(270): CWebApplication->createController()
+#3 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\www\campus\applications\webservice\index.php(8): CWebApplication->run()
+REQUEST_URI=/
+2014/01/15 13:28:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\www\campus\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/01/15 13:28:35 [error] [php] include(FrontController.php): failed to open stream: No such file or directory (D:\www\campus\framework\YiiBase.php:418)
+Stack trace:
+#0 D:\www\campus\applications\webservice\protected\controllers\SiteController.php(2): spl_autoload_call()
+#1 D:\www\campus\framework\web\CWebApplication.php(344): require()
+#2 D:\www\campus\framework\web\CWebApplication.php(270): CWebApplication->createController()
+#3 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\www\campus\applications\webservice\index.php(8): CWebApplication->run()
+REQUEST_URI=/
