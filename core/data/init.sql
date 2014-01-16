@@ -27,11 +27,11 @@ CREATE TABLE `admin` (
   `name` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `super_admin` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
 /*Data for the table `admin` */
 
-insert  into `admin`(`id`,`a_login`,`a_password`,`name`,`super_admin`) values (1,'admin','e6c10ba2c8c5ec1961035486ba3781b5cf75ed02','Admin',1);
+insert  into `admin`(`id`,`a_login`,`a_password`,`name`,`super_admin`) values (1,'admin','e6c10ba2c8c5ec1961035486ba3781b5cf75ed02','Admin',1),(2,'manager1','e1cb4428c46408cd3ffb9ba810cc7c833f6c9621','manager1',0);
 
 /*Table structure for table `admin_activity_log` */
 
@@ -47,11 +47,11 @@ CREATE TABLE `admin_activity_log` (
   `message` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `additional` text CHARACTER SET utf8 COLLATE utf8_unicode_ci,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
 
 /*Data for the table `admin_activity_log` */
 
-insert  into `admin_activity_log`(`id`,`date`,`ip`,`admin_name`,`action`,`entity`,`message`,`additional`) values (1,'2014-01-11 22:58:47','127.0.0.1','Admin (admin)','login',NULL,'Admin (admin) logged in',NULL);
+insert  into `admin_activity_log`(`id`,`date`,`ip`,`admin_name`,`action`,`entity`,`message`,`additional`) values (1,'2014-01-11 22:58:47','127.0.0.1','Admin (admin)','login',NULL,'Admin (admin) logged in',NULL),(2,'2014-01-14 23:32:48','127.0.0.1','Admin (admin)','login',NULL,'Admin (admin) logged in',NULL),(3,'2014-01-14 23:33:25','127.0.0.1','Admin (admin)','create','admin','Admin (admin) added new admin manager1 (#)','Attributes:  \"super_admin\" = \"0\", \"a_login\" = \"manager1\", \"name\" = \"manager1\", \"a_password\" = \"7647c210c9d978747cf2e2e12470fc275e5b1ddd\", \"id\" = \"2\",'),(4,'2014-01-14 23:33:32','127.0.0.1','Admin (admin)','logout',NULL,'Admin (admin) logged out',NULL),(5,'2014-01-14 23:33:58','127.0.0.1','Admin (admin)','login',NULL,'Admin (admin) logged in',NULL),(6,'2014-01-14 23:35:06','127.0.0.1','Admin (admin)','login',NULL,'Admin (admin) logged in',NULL),(7,'2014-01-14 23:35:22','127.0.0.1','Admin (admin)','update','admin','Admin (admin) updated admin manager1 (#)','Changed attributes \"a_password\" from \"7647c210c9d978747cf2e2e12470fc275e5b1ddd\" to \"e1cb4428c46408cd3ffb9ba810cc7c833f6c9621\",'),(8,'2014-01-14 23:35:28','127.0.0.1','Admin (admin)','logout',NULL,'Admin (admin) logged out',NULL),(9,'2014-01-14 23:35:34','127.0.0.1','manager1 (manager1)','login',NULL,'manager1 (manager1) logged in',NULL),(10,'2014-01-14 23:36:25','127.0.0.1','manager1 (manager1)','logout',NULL,'manager1 (manager1) logged out',NULL),(11,'2014-01-14 23:36:34','127.0.0.1','Admin (admin)','login',NULL,'Admin (admin) logged in',NULL);
 
 /*Table structure for table `file` */
 
@@ -124,11 +124,11 @@ CREATE TABLE `subject` (
   `title` int(11) DEFAULT NULL,
   `desc` text COLLATE utf8_bin,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 /*Data for the table `subject` */
 
-insert  into `subject`(`id`,`title`,`desc`) values (1,0,NULL);
+insert  into `subject`(`id`,`title`,`desc`) values (1,0,NULL),(2,0,NULL),(3,0,NULL),(4,0,NULL);
 
 /*Table structure for table `tbl_migration` */
 
@@ -153,11 +153,11 @@ CREATE TABLE `teacher` (
   `name` varchar(300) COLLATE utf8_bin DEFAULT NULL,
   `desc` text COLLATE utf8_bin,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 /*Data for the table `teacher` */
 
-insert  into `teacher`(`id`,`name`,`desc`) values (1,'Smirnov',NULL);
+insert  into `teacher`(`id`,`name`,`desc`) values (1,'Smirnov',NULL),(2,'Учитель2',NULL),(3,'Учитель3',NULL),(4,'Учитель4',NULL),(5,'Учитель5',NULL);
 
 /*Table structure for table `type` */
 
@@ -168,11 +168,11 @@ CREATE TABLE `type` (
   `title` varchar(300) COLLATE utf8_bin DEFAULT NULL,
   `desc` text COLLATE utf8_bin,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 /*Data for the table `type` */
 
-insert  into `type`(`id`,`title`,`desc`) values (1,'тип',NULL);
+insert  into `type`(`id`,`title`,`desc`) values (1,'тип1',NULL),(2,'тип2',NULL),(3,'тип3',NULL),(4,'тип4',NULL),(5,'тип5',NULL);
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
