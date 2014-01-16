@@ -17,13 +17,17 @@ class FiltersHelper {
 
     public static function getTableContent($tableName) {
 //        $dependency = new CDbCacheDependency('SELECT MAX(update_time) FROM tbl_post');
-        return Yii::app()->db->createCommand()->select('*')->from("{$tableName}")->queryAll();
+        $dataReader = Yii::app()->db->createCommand()->select('*')->from("{$tableName}")->query();
+        while (($row = $dataReader->read()) !== false) {
+            $result[$row['id']] = $row;
+        }
+        return $result;
     }
 
     public static function getTables() {
-        $result = array();
+        $result = false;
         $id = "FilterTables";
-        $result = Yii::app()->cache->get($id);
+        //$result = Yii::app()->cache->get($id);
         if ($result === false) {
             // оновлюємо $value, тому що змінна не знайдена у кеші,
             // і зберігаємо в кеш для подальшого використання:
@@ -35,7 +39,29 @@ class FiltersHelper {
 
         Yii::app()->cache->set($id, $result);
         return $result;
-    }        
+    }
+
+    public static function getTerms() {
+        $year = 1;
+        for ($i = 1; $i < 12; $i++) {
+            if ($i % 2 == 0)
+                ++$year;
+            $terms[$i] = $i . " - Курс $year/" . ($i % 2 + 1);
+        }
+        return $terms;
+    }
+
+    public static function getYears() {
+        $start = mktime(0, 0, 0, 1, 1, 2009);
+        $stop = time(date("Y"));
+
+        for ($temp = $start; $temp < $stop; $temp += 86400 * 365) {
+            $year = date('Y', $temp);
+            $years[$year] = $year;
+        }
+        return $years;
+    }
+
 }
 
 ?>

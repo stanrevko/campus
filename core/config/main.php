@@ -1,11 +1,35 @@
 <?php
-
+        function bin_rand($min = null, $max = null)
+{
+    $min = ($min) ? (int) $min : 0;
+    $max = ($max) ? (int) $max : PHP_INT_MAX;
+    
+    $range = range($min, $max);
+    $average = array_sum($range) / count($range);
+    
+    $dist = array();
+    for ($x = $min; $x <= $max; $x++) {
+        $dist[$x] = -abs($average - $x) + $average + 1;
+    }
+    
+    $map = array();
+    foreach ($dist as $int => $quantity) {
+        for ($x = 0; $x < $quantity; $x++) {
+            $map[] = $int;
+        }
+    }
+    
+    shuffle($map);
+    return current($map);
+}
 Yii::setPathOfAlias('core', dirname(__FILE__) . DIRECTORY_SEPARATOR . '..');
 Yii::setPathOfAlias('images', dirname(__FILE__) . DIRECTORY_SEPARATOR . '../../applications/images');
-
+if(YII_DEBUG)
+    require_once dirname(__FILE__) . DIRECTORY_SEPARATOR . '../extensions/kint/Kint.class.php';
 return array(
     'name' => 'PTI-campus',
-   
+    'sourceLanguage'=>'ru',
+    'language'=>'ru',
     'import' => array(
         'core.models.*',
         'core.components.*',

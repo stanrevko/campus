@@ -1,1 +1,0 @@
-a:2:{i:0;a:4:{s:7:"subject";a:1:{i:0;a:3:{s:2:"id";s:1:"1";s:5:"title";s:1:"0";s:4:"desc";N;}}s:7:"teacher";a:1:{i:0;a:3:{s:2:"id";s:1:"1";s:4:"name";s:7:"Smirnov";s:4:"desc";N;}}s:4:"type";a:1:{i:0;a:3:{s:2:"id";s:1:"1";s:5:"title";s:6:"тип";s:4:"desc";N;}}s:4:"kind";a:1:{i:0;a:3:{s:2:"id";s:1:"1";s:5:"title";s:12:"лекція";s:4:"desc";N;}}}i:1;N;}

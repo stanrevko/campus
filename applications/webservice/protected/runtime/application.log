@@ -879,3 +879,340 @@ Stack trace:
 #21 {main}
 REQUEST_URI=/site/index/
 ---
+2014/01/16 12:09:16 [error] [php] Undefined offset: 0 (D:\www\campus\applications\webservice\themes\basic\views\site\_filters.php:6)
+Stack trace:
+#0 D:\www\campus\framework\web\CController.php(870): SiteController->renderFile()
+#1 D:\www\campus\applications\webservice\themes\basic\views\site\index.php(12): SiteController->renderPartial()
+#2 D:\www\campus\framework\web\CBaseController.php(127): require()
+#3 D:\www\campus\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#4 D:\www\campus\framework\web\CController.php(870): SiteController->renderFile()
+#5 D:\www\campus\framework\web\CController.php(783): SiteController->renderPartial()
+#6 D:\www\campus\applications\webservice\protected\controllers\SiteController.php(133): SiteController->render()
+#7 D:\www\campus\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#8 D:\www\campus\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 D:\www\campus\framework\web\CController.php(287): SiteController->runAction()
+#10 D:\www\campus\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#11 D:\www\campus\framework\web\CWebApplication.php(276): SiteController->run()
+#12 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#13 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\www\campus\applications\webservice\index.php(8): CWebApplication->run()
+REQUEST_URI=/site/index/
+2014/01/16 12:09:38 [error] [php] include(Chtml.php): failed to open stream: No such file or directory (D:\www\campus\framework\YiiBase.php:418)
+Stack trace:
+#0 D:\www\campus\applications\webservice\themes\basic\views\site\_filters.php(3): spl_autoload_call()
+#1 D:\www\campus\framework\web\CBaseController.php(127): require()
+#2 D:\www\campus\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#3 D:\www\campus\framework\web\CController.php(870): SiteController->renderFile()
+#4 D:\www\campus\applications\webservice\themes\basic\views\site\index.php(12): SiteController->renderPartial()
+#5 D:\www\campus\framework\web\CBaseController.php(127): require()
+#6 D:\www\campus\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#7 D:\www\campus\framework\web\CController.php(870): SiteController->renderFile()
+#8 D:\www\campus\framework\web\CController.php(783): SiteController->renderPartial()
+#9 D:\www\campus\applications\webservice\protected\controllers\SiteController.php(133): SiteController->render()
+#10 D:\www\campus\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#11 D:\www\campus\framework\web\CController.php(309): CInlineAction->runWithParams()
+#12 D:\www\campus\framework\web\CController.php(287): SiteController->runAction()
+#13 D:\www\campus\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#14 D:\www\campus\framework\web\CWebApplication.php(276): SiteController->run()
+#15 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#16 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 D:\www\campus\applications\webservice\index.php(8): CWebApplication->run()
+REQUEST_URI=/site/index/
+2014/01/16 12:12:23 [error] [php] Illegal string offset 'name' (D:\www\campus\framework\web\helpers\CHtml.php:1975)
+Stack trace:
+#0 D:\www\campus\framework\web\CBaseController.php(127): require()
+#1 D:\www\campus\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#2 D:\www\campus\framework\web\CController.php(870): SiteController->renderFile()
+#3 D:\www\campus\applications\webservice\themes\basic\views\site\index.php(12): SiteController->renderPartial()
+#4 D:\www\campus\framework\web\CBaseController.php(127): require()
+#5 D:\www\campus\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#6 D:\www\campus\framework\web\CController.php(870): SiteController->renderFile()
+#7 D:\www\campus\framework\web\CController.php(783): SiteController->renderPartial()
+#8 D:\www\campus\applications\webservice\protected\controllers\SiteController.php(133): SiteController->render()
+#9 D:\www\campus\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#10 D:\www\campus\framework\web\CController.php(309): CInlineAction->runWithParams()
+#11 D:\www\campus\framework\web\CController.php(287): SiteController->runAction()
+#12 D:\www\campus\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#13 D:\www\campus\framework\web\CWebApplication.php(276): SiteController->run()
+#14 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#15 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\www\campus\applications\webservice\index.php(8): CWebApplication->run()
+REQUEST_URI=/site/index/
+2014/01/16 12:19:24 [error] [exception.CException] exception 'CException' with message 'Property "Material.subject_id" is not defined.' in D:\www\campus\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\www\campus\framework\db\ar\CActiveRecord.php(144): CComponent->__get('subject_id')
+#1 D:\www\campus\framework\web\helpers\CHtml.php(2044): CActiveRecord->__get('subject_id')
+#2 D:\www\campus\framework\web\helpers\CHtml.php(1402): CHtml::resolveValue(Object(Material), 'subject_id')
+#3 D:\www\campus\applications\webservice\themes\basic\views\site\_filters.php(7): CHtml::activeDropDownList(Object(Material), 'subject_id', Array, Array)
+#4 D:\www\campus\framework\web\CBaseController.php(127): require('D:\www\campus\a...')
+#5 D:\www\campus\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\www\campus\a...', Array, true)
+#6 D:\www\campus\framework\web\CController.php(870): CBaseController->renderFile('D:\www\campus\a...', Array, true)
+#7 D:\www\campus\applications\webservice\themes\basic\views\site\index.php(12): CController->renderPartial('_filters', Array)
+#8 D:\www\campus\framework\web\CBaseController.php(127): require('D:\www\campus\a...')
+#9 D:\www\campus\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\www\campus\a...', Array, true)
+#10 D:\www\campus\framework\web\CController.php(870): CBaseController->renderFile('D:\www\campus\a...', Array, true)
+#11 D:\www\campus\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#12 D:\www\campus\applications\webservice\protected\controllers\SiteController.php(133): CController->render('index', Array)
+#13 D:\www\campus\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#14 D:\www\campus\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#15 D:\www\campus\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#16 D:\www\campus\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 D:\www\campus\framework\web\CWebApplication.php(276): CController->run('index')
+#18 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#19 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#20 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#21 {main}
+REQUEST_URI=/site/index/
+---
+2014/01/16 12:28:17 [warning] [application] Failed to set unsafe attribute "type" of "Material".
+2014/01/16 12:28:17 [warning] [application] Failed to set unsafe attribute "kind" of "Material".
+2014/01/16 12:28:30 [warning] [application] Failed to set unsafe attribute "type" of "Material".
+2014/01/16 12:28:30 [warning] [application] Failed to set unsafe attribute "kind" of "Material".
+2014/01/16 12:28:37 [warning] [application] Failed to set unsafe attribute "type" of "Material".
+2014/01/16 12:28:37 [warning] [application] Failed to set unsafe attribute "kind" of "Material".
+2014/01/16 12:28:40 [warning] [application] Failed to set unsafe attribute "type" of "Material".
+2014/01/16 12:28:40 [warning] [application] Failed to set unsafe attribute "kind" of "Material".
+2014/01/16 12:28:43 [warning] [application] Failed to set unsafe attribute "type" of "Material".
+2014/01/16 12:28:43 [warning] [application] Failed to set unsafe attribute "kind" of "Material".
+2014/01/16 12:29:18 [warning] [application] Failed to set unsafe attribute "type" of "Material".
+2014/01/16 12:29:18 [warning] [application] Failed to set unsafe attribute "kind" of "Material".
+2014/01/16 12:29:26 [warning] [application] Failed to set unsafe attribute "type" of "Material".
+2014/01/16 12:29:26 [warning] [application] Failed to set unsafe attribute "kind" of "Material".
+2014/01/16 12:30:12 [warning] [application] Failed to set unsafe attribute "type" of "Material".
+2014/01/16 12:30:12 [warning] [application] Failed to set unsafe attribute "kind" of "Material".
+2014/01/16 12:30:51 [warning] [application] Failed to set unsafe attribute "type" of "Material".
+2014/01/16 12:30:51 [warning] [application] Failed to set unsafe attribute "kind" of "Material".
+2014/01/16 12:39:04 [warning] [application] Failed to set unsafe attribute "type" of "Material".
+2014/01/16 12:39:04 [warning] [application] Failed to set unsafe attribute "kind" of "Material".
+2014/01/16 12:39:06 [warning] [application] Failed to set unsafe attribute "type" of "Material".
+2014/01/16 12:39:06 [warning] [application] Failed to set unsafe attribute "kind" of "Material".
+2014/01/16 12:39:43 [warning] [application] Не удалось присвоить небезопасный атрибут "type" класса "Material".
+2014/01/16 12:39:43 [warning] [application] Не удалось присвоить небезопасный атрибут "kind" класса "Material".
+2014/01/16 12:39:55 [warning] [application] Не удалось присвоить небезопасный атрибут "type" класса "Material".
+2014/01/16 12:39:55 [warning] [application] Не удалось присвоить небезопасный атрибут "kind" класса "Material".
+2014/01/16 12:40:09 [warning] [application] Не удалось присвоить небезопасный атрибут "type" класса "Material".
+2014/01/16 12:40:09 [warning] [application] Не удалось присвоить небезопасный атрибут "kind" класса "Material".
+2014/01/16 12:40:12 [warning] [application] Не удалось присвоить небезопасный атрибут "type" класса "Material".
+2014/01/16 12:40:12 [warning] [application] Не удалось присвоить небезопасный атрибут "kind" класса "Material".
+2014/01/16 12:40:16 [warning] [application] Не удалось присвоить небезопасный атрибут "type" класса "Material".
+2014/01/16 12:40:16 [warning] [application] Не удалось присвоить небезопасный атрибут "kind" класса "Material".
+2014/01/16 12:40:19 [warning] [application] Не удалось присвоить небезопасный атрибут "type" класса "Material".
+2014/01/16 12:40:19 [warning] [application] Не удалось присвоить небезопасный атрибут "kind" класса "Material".
+2014/01/16 12:40:35 [warning] [application] Не удалось присвоить небезопасный атрибут "type" класса "Material".
+2014/01/16 12:40:35 [warning] [application] Не удалось присвоить небезопасный атрибут "kind" класса "Material".
+2014/01/16 12:49:30 [warning] [application] Не удалось присвоить небезопасный атрибут "type" класса "Material".
+2014/01/16 12:49:30 [warning] [application] Не удалось присвоить небезопасный атрибут "kind" класса "Material".
+2014/01/16 12:49:49 [warning] [application] Не удалось присвоить небезопасный атрибут "type" класса "Material".
+2014/01/16 12:49:49 [warning] [application] Не удалось присвоить небезопасный атрибут "kind" класса "Material".
+2014/01/16 12:50:20 [warning] [application] Не удалось присвоить небезопасный атрибут "type" класса "Material".
+2014/01/16 12:50:20 [warning] [application] Не удалось присвоить небезопасный атрибут "kind" класса "Material".
+2014/01/16 13:04:20 [warning] [application] Не удалось присвоить небезопасный атрибут "type" класса "Material".
+2014/01/16 13:04:20 [warning] [application] Не удалось присвоить небезопасный атрибут "kind" класса "Material".
+2014/01/16 13:04:20 [error] [php] Use of undefined constant years - assumed 'years' (D:\www\campus\applications\webservice\protected\models\FiltersHelper.php:63)
+Stack trace:
+#0 D:\www\campus\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#1 D:\www\campus\framework\web\CController.php(870): SiteController->renderFile()
+#2 D:\www\campus\applications\webservice\themes\basic\views\site\index.php(14): SiteController->renderPartial()
+#3 D:\www\campus\framework\web\CBaseController.php(127): require()
+#4 D:\www\campus\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#5 D:\www\campus\framework\web\CController.php(870): SiteController->renderFile()
+#6 D:\www\campus\framework\web\CController.php(783): SiteController->renderPartial()
+#7 D:\www\campus\applications\webservice\protected\controllers\SiteController.php(132): SiteController->render()
+#8 D:\www\campus\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#9 D:\www\campus\framework\web\CController.php(309): CInlineAction->runWithParams()
+#10 D:\www\campus\framework\web\CController.php(287): SiteController->runAction()
+#11 D:\www\campus\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#12 D:\www\campus\framework\web\CWebApplication.php(276): SiteController->run()
+#13 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#14 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\www\campus\applications\webservice\index.php(8): CWebApplication->run()
+REQUEST_URI=/site/index/?Material%5Bteacher_id%5D=&Material%5Bsubj_id%5D=&Material%5Btype%5D=2&Material%5Bkind%5D=&yt0=%D0%A4%D0%B8%D0%BB%D1%8C%D1%82%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C&Material%5Bteacher_id%5D=2&Material%5Bsubj_id%5D=&Material%5Btype%5D=&Material%5Bkind%5D=&yt0=%D0%A4%D0%B8%D0%BB%D1%8C%D1%82%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C&Material%5Bteacher_id%5D=&Material%5Bsubj_id%5D=1&Material%5Btype%5D=&Material%5Bkind%5D=&yt0=%D0%A4%D0%B8%D0%BB%D1%8C%D1%82%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C&Material%5Bteacher_id%5D=&Material%5Bsubj_id%5D=2&Material%5Btype%5D=&Material%5Bkind%5D=&yt0=%D0%A4%D0%B8%D0%BB%D1%8C%D1%82%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C&Material%5Bteacher_id%5D=&Material%5Bsubj_id%5D=1&Material%5Btype%5D=&Material%5Bkind%5D=&yt0=%D0%A4%D0%B8%D0%BB%D1%8C%D1%82%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C&Material%5Bteacher_id%5D=3&Material%5Bsubj_id%5D=4&Material%5Btype%5D=3&Material%5Bkind%5D=1&yt0=%D0%A4%D0%B8%D0%BB%D1%8C%D1%82%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C&Material%5Bterm%5D=&Material%5Bteacher_id%5D=3&Material%5Bsubj_id%5D=1&Material%5Btype%5D=1&Material%5Bkind%5D=&yt0=%D0%A4%D0%B8%D0%BB%D1%8C%D1%82%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C&Material%5Bterm%5D=&Material%5Bteacher_id%5D=3&Material%5Bsubj_id%5D=1&Material%5Btype_id%5D=2&Material%5Bkind_id%5D=&yt0=%D0%A4%D0%B8%D0%BB%D1%8C%D1%82%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C&Material%5Bterm%5D=&Material%5Bteacher_id%5D=3&Material%5Bsubj_id%5D=1&Material%5Btype_id%5D=2&Material%5Bkind_id%5D=1&yt0=%D0%A4%D0%B8%D0%BB%D1%8C%D1%82%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C&Material%5Bterm%5D=3&Material%5Bteacher_id%5D=3&Material%5Bsubj_id%5D=1&Material%5Btype_id%5D=2&Material%5Bkind_id%5D=1&yt0=%D0%A4%D0%B8%D0%BB%D1%8C%D1%82%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C&Material%5Bterm%5D=&Material%5Bsubj_id%5D=&Material%5Bteacher_id%5D=&Material%5Btype_id%5D=&Material%5Bkind_id%5D=&yt0=%D0%A4%D0%B8%D0%BB%D1%8C%D1%82%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C
+2014/01/16 13:04:33 [warning] [application] Не удалось присвоить небезопасный атрибут "type" класса "Material".
+2014/01/16 13:04:33 [warning] [application] Не удалось присвоить небезопасный атрибут "kind" класса "Material".
+2014/01/16 13:05:03 [warning] [application] Не удалось присвоить небезопасный атрибут "type" класса "Material".
+2014/01/16 13:05:03 [warning] [application] Не удалось присвоить небезопасный атрибут "kind" класса "Material".
+2014/01/16 13:05:19 [warning] [application] Не удалось присвоить небезопасный атрибут "type" класса "Material".
+2014/01/16 13:05:19 [warning] [application] Не удалось присвоить небезопасный атрибут "kind" класса "Material".
+2014/01/16 13:05:54 [warning] [application] Не удалось присвоить небезопасный атрибут "type" класса "Material".
+2014/01/16 13:05:54 [warning] [application] Не удалось присвоить небезопасный атрибут "kind" класса "Material".
+2014/01/16 13:59:35 [warning] [application] Не удалось присвоить небезопасный атрибут "type" класса "Material".
+2014/01/16 13:59:35 [warning] [application] Не удалось присвоить небезопасный атрибут "kind" класса "Material".
+2014/01/16 14:00:50 [error] [php] Undefined variable: random (D:\www\campus\applications\webservice\protected\controllers\SiteController.php:52)
+Stack trace:
+#0 D:\www\campus\framework\web\CController.php(287): SiteController->runAction()
+#1 D:\www\campus\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#2 D:\www\campus\framework\web\CWebApplication.php(276): SiteController->run()
+#3 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\www\campus\applications\webservice\index.php(8): CWebApplication->run()
+REQUEST_URI=/site/test
+2014/01/16 14:01:23 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::execute(): SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`campus`.`material`, CONSTRAINT `FK_kind` FOREIGN KEY (`kind_id`) REFERENCES `kind` (`id`)). Выполнявшийся SQL-запрос: INSERT INTO `campus`.`material`(`id`,`title`,`desc`,`author_id`,`teacher_id`,`subj_id`,`type_id`,`kind_id`,`term`,`year`,`created`,`updated`,`status`) VALUES ( NULL,'Материал2',NULL,NULL,4,4,4,4,4,NULL,NULL,NULL,'0');.
+2014/01/16 14:01:23 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`campus`.`material`, CONSTRAINT `FK_kind` FOREIGN KEY (`kind_id`) REFERENCES `kind` (`id`)). The SQL statement executed was: INSERT INTO `campus`.`material`(`id`,`title`,`desc`,`author_id`,`teacher_id`,`subj_id`,`type_id`,`kind_id`,`term`,`year`,`created`,`updated`,`status`) VALUES ( NULL,'Материал2',NULL,NULL,4,4,4,4,4,NULL,NULL,NULL,'0');' in D:\www\campus\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\www\campus\applications\webservice\protected\controllers\SiteController.php(54): CDbCommand->execute()
+#1 D:\www\campus\framework\web\actions\CInlineAction.php(50): SiteController->actionTest()
+#2 D:\www\campus\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 D:\www\campus\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#4 D:\www\campus\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 D:\www\campus\framework\web\CWebApplication.php(276): CController->run('test')
+#6 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController('site/test')
+#7 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/test
+---
+2014/01/16 14:01:27 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::execute(): SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`campus`.`material`, CONSTRAINT `FK_kind` FOREIGN KEY (`kind_id`) REFERENCES `kind` (`id`)). Выполнявшийся SQL-запрос: INSERT INTO `campus`.`material`(`id`,`title`,`desc`,`author_id`,`teacher_id`,`subj_id`,`type_id`,`kind_id`,`term`,`year`,`created`,`updated`,`status`) VALUES ( NULL,'Материал2',NULL,NULL,3,3,3,3,3,NULL,NULL,NULL,'0');.
+2014/01/16 14:01:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`campus`.`material`, CONSTRAINT `FK_kind` FOREIGN KEY (`kind_id`) REFERENCES `kind` (`id`)). The SQL statement executed was: INSERT INTO `campus`.`material`(`id`,`title`,`desc`,`author_id`,`teacher_id`,`subj_id`,`type_id`,`kind_id`,`term`,`year`,`created`,`updated`,`status`) VALUES ( NULL,'Материал2',NULL,NULL,3,3,3,3,3,NULL,NULL,NULL,'0');' in D:\www\campus\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\www\campus\applications\webservice\protected\controllers\SiteController.php(54): CDbCommand->execute()
+#1 D:\www\campus\framework\web\actions\CInlineAction.php(50): SiteController->actionTest()
+#2 D:\www\campus\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 D:\www\campus\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#4 D:\www\campus\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 D:\www\campus\framework\web\CWebApplication.php(276): CController->run('test')
+#6 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController('site/test')
+#7 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/test
+---
+2014/01/16 14:01:33 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::execute(): SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`campus`.`material`, CONSTRAINT `FK_kind` FOREIGN KEY (`kind_id`) REFERENCES `kind` (`id`)). Выполнявшийся SQL-запрос: INSERT INTO `campus`.`material`(`id`,`title`,`desc`,`author_id`,`teacher_id`,`subj_id`,`type_id`,`kind_id`,`term`,`year`,`created`,`updated`,`status`) VALUES ( NULL,'Материал2',NULL,NULL,5,5,5,5,5,NULL,NULL,NULL,'0');.
+2014/01/16 14:01:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`campus`.`material`, CONSTRAINT `FK_kind` FOREIGN KEY (`kind_id`) REFERENCES `kind` (`id`)). The SQL statement executed was: INSERT INTO `campus`.`material`(`id`,`title`,`desc`,`author_id`,`teacher_id`,`subj_id`,`type_id`,`kind_id`,`term`,`year`,`created`,`updated`,`status`) VALUES ( NULL,'Материал2',NULL,NULL,5,5,5,5,5,NULL,NULL,NULL,'0');' in D:\www\campus\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\www\campus\applications\webservice\protected\controllers\SiteController.php(54): CDbCommand->execute()
+#1 D:\www\campus\framework\web\actions\CInlineAction.php(50): SiteController->actionTest()
+#2 D:\www\campus\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 D:\www\campus\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#4 D:\www\campus\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 D:\www\campus\framework\web\CWebApplication.php(276): CController->run('test')
+#6 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController('site/test')
+#7 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/test
+---
+2014/01/16 14:03:13 [error] [php] srand() expects at most 1 parameter, 2 given (D:\www\campus\applications\webservice\protected\controllers\SiteController.php:52)
+Stack trace:
+#0 D:\www\campus\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\www\campus\framework\web\CController.php(287): SiteController->runAction()
+#2 D:\www\campus\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#3 D:\www\campus\framework\web\CWebApplication.php(276): SiteController->run()
+#4 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#5 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 D:\www\campus\applications\webservice\index.php(8): CWebApplication->run()
+REQUEST_URI=/site/test
+2014/01/16 14:03:14 [error] [php] srand() expects at most 1 parameter, 2 given (D:\www\campus\applications\webservice\protected\controllers\SiteController.php:52)
+Stack trace:
+#0 D:\www\campus\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\www\campus\framework\web\CController.php(287): SiteController->runAction()
+#2 D:\www\campus\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#3 D:\www\campus\framework\web\CWebApplication.php(276): SiteController->run()
+#4 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#5 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 D:\www\campus\applications\webservice\index.php(8): CWebApplication->run()
+REQUEST_URI=/site/test
+2014/01/16 14:04:58 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::execute(): SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`campus`.`material`, CONSTRAINT `FK_kind` FOREIGN KEY (`kind_id`) REFERENCES `kind` (`id`)). Выполнявшийся SQL-запрос: INSERT INTO `campus`.`material`(`id`,`title`,`desc`,`author_id`,`teacher_id`,`subj_id`,`type_id`,`kind_id`,`term`,`year`,`created`,`updated`,`status`) VALUES ( NULL,'Материал2',NULL,NULL,4,4,4,4,4,NULL,NULL,NULL,'0');.
+2014/01/16 14:04:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`campus`.`material`, CONSTRAINT `FK_kind` FOREIGN KEY (`kind_id`) REFERENCES `kind` (`id`)). The SQL statement executed was: INSERT INTO `campus`.`material`(`id`,`title`,`desc`,`author_id`,`teacher_id`,`subj_id`,`type_id`,`kind_id`,`term`,`year`,`created`,`updated`,`status`) VALUES ( NULL,'Материал2',NULL,NULL,4,4,4,4,4,NULL,NULL,NULL,'0');' in D:\www\campus\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\www\campus\applications\webservice\protected\controllers\SiteController.php(68): CDbCommand->execute()
+#1 D:\www\campus\framework\web\actions\CInlineAction.php(50): SiteController->actionTest()
+#2 D:\www\campus\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 D:\www\campus\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#4 D:\www\campus\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 D:\www\campus\framework\web\CWebApplication.php(276): CController->run('test')
+#6 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController('site/test')
+#7 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/test
+---
+2014/01/16 14:05:00 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::execute(): SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`campus`.`material`, CONSTRAINT `FK_kind` FOREIGN KEY (`kind_id`) REFERENCES `kind` (`id`)). Выполнявшийся SQL-запрос: INSERT INTO `campus`.`material`(`id`,`title`,`desc`,`author_id`,`teacher_id`,`subj_id`,`type_id`,`kind_id`,`term`,`year`,`created`,`updated`,`status`) VALUES ( NULL,'Материал2',NULL,NULL,2,2,2,2,2,NULL,NULL,NULL,'0');.
+2014/01/16 14:05:00 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`campus`.`material`, CONSTRAINT `FK_kind` FOREIGN KEY (`kind_id`) REFERENCES `kind` (`id`)). The SQL statement executed was: INSERT INTO `campus`.`material`(`id`,`title`,`desc`,`author_id`,`teacher_id`,`subj_id`,`type_id`,`kind_id`,`term`,`year`,`created`,`updated`,`status`) VALUES ( NULL,'Материал2',NULL,NULL,2,2,2,2,2,NULL,NULL,NULL,'0');' in D:\www\campus\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\www\campus\applications\webservice\protected\controllers\SiteController.php(68): CDbCommand->execute()
+#1 D:\www\campus\framework\web\actions\CInlineAction.php(50): SiteController->actionTest()
+#2 D:\www\campus\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 D:\www\campus\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#4 D:\www\campus\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 D:\www\campus\framework\web\CWebApplication.php(276): CController->run('test')
+#6 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController('site/test')
+#7 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/test
+---
+2014/01/16 14:05:02 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::execute(): SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`campus`.`material`, CONSTRAINT `FK_kind` FOREIGN KEY (`kind_id`) REFERENCES `kind` (`id`)). Выполнявшийся SQL-запрос: INSERT INTO `campus`.`material`(`id`,`title`,`desc`,`author_id`,`teacher_id`,`subj_id`,`type_id`,`kind_id`,`term`,`year`,`created`,`updated`,`status`) VALUES ( NULL,'Материал2',NULL,NULL,4,4,4,4,4,NULL,NULL,NULL,'0');.
+2014/01/16 14:05:02 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`campus`.`material`, CONSTRAINT `FK_kind` FOREIGN KEY (`kind_id`) REFERENCES `kind` (`id`)). The SQL statement executed was: INSERT INTO `campus`.`material`(`id`,`title`,`desc`,`author_id`,`teacher_id`,`subj_id`,`type_id`,`kind_id`,`term`,`year`,`created`,`updated`,`status`) VALUES ( NULL,'Материал2',NULL,NULL,4,4,4,4,4,NULL,NULL,NULL,'0');' in D:\www\campus\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\www\campus\applications\webservice\protected\controllers\SiteController.php(68): CDbCommand->execute()
+#1 D:\www\campus\framework\web\actions\CInlineAction.php(50): SiteController->actionTest()
+#2 D:\www\campus\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 D:\www\campus\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#4 D:\www\campus\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 D:\www\campus\framework\web\CWebApplication.php(276): CController->run('test')
+#6 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController('site/test')
+#7 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/test
+---
+2014/01/16 14:05:46 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::execute(): SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`campus`.`material`, CONSTRAINT `FK_kind` FOREIGN KEY (`kind_id`) REFERENCES `kind` (`id`)). Выполнявшийся SQL-запрос: INSERT INTO `campus`.`material`(`id`,`title`,`desc`,`author_id`,`teacher_id`,`subj_id`,`type_id`,`kind_id`,`term`,`year`,`created`,`updated`,`status`) VALUES ( NULL,'Материал2',NULL,NULL,2,2,2,2,2,NULL,NULL,NULL,'0');.
+2014/01/16 14:05:46 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`campus`.`material`, CONSTRAINT `FK_kind` FOREIGN KEY (`kind_id`) REFERENCES `kind` (`id`)). The SQL statement executed was: INSERT INTO `campus`.`material`(`id`,`title`,`desc`,`author_id`,`teacher_id`,`subj_id`,`type_id`,`kind_id`,`term`,`year`,`created`,`updated`,`status`) VALUES ( NULL,'Материал2',NULL,NULL,2,2,2,2,2,NULL,NULL,NULL,'0');' in D:\www\campus\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\www\campus\applications\webservice\protected\controllers\SiteController.php(68): CDbCommand->execute()
+#1 D:\www\campus\framework\web\actions\CInlineAction.php(50): SiteController->actionTest()
+#2 D:\www\campus\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 D:\www\campus\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#4 D:\www\campus\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 D:\www\campus\framework\web\CWebApplication.php(276): CController->run('test')
+#6 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController('site/test')
+#7 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/test
+---
+2014/01/16 14:05:49 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::execute(): SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`campus`.`material`, CONSTRAINT `FK_kind` FOREIGN KEY (`kind_id`) REFERENCES `kind` (`id`)). Выполнявшийся SQL-запрос: INSERT INTO `campus`.`material`(`id`,`title`,`desc`,`author_id`,`teacher_id`,`subj_id`,`type_id`,`kind_id`,`term`,`year`,`created`,`updated`,`status`) VALUES ( NULL,'Материал2',NULL,NULL,2,2,2,2,2,NULL,NULL,NULL,'0');.
+2014/01/16 14:05:49 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`campus`.`material`, CONSTRAINT `FK_kind` FOREIGN KEY (`kind_id`) REFERENCES `kind` (`id`)). The SQL statement executed was: INSERT INTO `campus`.`material`(`id`,`title`,`desc`,`author_id`,`teacher_id`,`subj_id`,`type_id`,`kind_id`,`term`,`year`,`created`,`updated`,`status`) VALUES ( NULL,'Материал2',NULL,NULL,2,2,2,2,2,NULL,NULL,NULL,'0');' in D:\www\campus\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\www\campus\applications\webservice\protected\controllers\SiteController.php(68): CDbCommand->execute()
+#1 D:\www\campus\framework\web\actions\CInlineAction.php(50): SiteController->actionTest()
+#2 D:\www\campus\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 D:\www\campus\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#4 D:\www\campus\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 D:\www\campus\framework\web\CWebApplication.php(276): CController->run('test')
+#6 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController('site/test')
+#7 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/test
+---
+2014/01/16 14:06:56 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::execute(): SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`campus`.`material`, CONSTRAINT `FK_kind` FOREIGN KEY (`kind_id`) REFERENCES `kind` (`id`)). Выполнявшийся SQL-запрос: INSERT INTO `campus`.`material`(`id`,`title`,`desc`,`author_id`,`teacher_id`,`subj_id`,`type_id`,`kind_id`,`term`,`year`,`created`,`updated`,`status`) VALUES ( NULL,'Материал2',NULL,NULL,3,3,3,3,3,NULL,NULL,NULL,'0');.
+2014/01/16 14:06:56 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`campus`.`material`, CONSTRAINT `FK_kind` FOREIGN KEY (`kind_id`) REFERENCES `kind` (`id`)). The SQL statement executed was: INSERT INTO `campus`.`material`(`id`,`title`,`desc`,`author_id`,`teacher_id`,`subj_id`,`type_id`,`kind_id`,`term`,`year`,`created`,`updated`,`status`) VALUES ( NULL,'Материал2',NULL,NULL,3,3,3,3,3,NULL,NULL,NULL,'0');' in D:\www\campus\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\www\campus\applications\webservice\protected\controllers\SiteController.php(70): CDbCommand->execute()
+#1 D:\www\campus\framework\web\actions\CInlineAction.php(50): SiteController->actionTest()
+#2 D:\www\campus\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 D:\www\campus\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#4 D:\www\campus\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 D:\www\campus\framework\web\CWebApplication.php(276): CController->run('test')
+#6 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController('site/test')
+#7 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/test
+---
+2014/01/16 14:07:03 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::execute(): SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`campus`.`material`, CONSTRAINT `FK_kind` FOREIGN KEY (`kind_id`) REFERENCES `kind` (`id`)). Выполнявшийся SQL-запрос: INSERT INTO `campus`.`material`(`id`,`title`,`desc`,`author_id`,`teacher_id`,`subj_id`,`type_id`,`kind_id`,`term`,`year`,`created`,`updated`,`status`) VALUES ( NULL,'Материал2',NULL,NULL,5,5,5,5,5,NULL,NULL,NULL,'0');.
+2014/01/16 14:07:03 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`campus`.`material`, CONSTRAINT `FK_kind` FOREIGN KEY (`kind_id`) REFERENCES `kind` (`id`)). The SQL statement executed was: INSERT INTO `campus`.`material`(`id`,`title`,`desc`,`author_id`,`teacher_id`,`subj_id`,`type_id`,`kind_id`,`term`,`year`,`created`,`updated`,`status`) VALUES ( NULL,'Материал2',NULL,NULL,5,5,5,5,5,NULL,NULL,NULL,'0');' in D:\www\campus\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\www\campus\applications\webservice\protected\controllers\SiteController.php(70): CDbCommand->execute()
+#1 D:\www\campus\framework\web\actions\CInlineAction.php(50): SiteController->actionTest()
+#2 D:\www\campus\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 D:\www\campus\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#4 D:\www\campus\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 D:\www\campus\framework\web\CWebApplication.php(276): CController->run('test')
+#6 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController('site/test')
+#7 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/test
+---

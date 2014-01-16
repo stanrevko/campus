@@ -47,9 +47,28 @@
 		));
 	}
 
+
+
         public function actionTest(){
-            $arr = FiltersHelper::getTables();
-            var_dump($arr);
+            
+            $random= array(rand(1, 5));
+            srand();
+            $random[]=  bin_rand(1, 5);
+            srand();
+            $random[]=   bin_rand(1, 5);
+            srand();
+            $random[]=   bin_rand(1, 5);
+            srand();
+            $random[]=   bin_rand(1, 5);
+            srand();
+            $random[]=   bin_rand(1, 5);
+            srand();
+            $random[]=   bin_rand(1, 5);
+            
+            
+            $sql = "INSERT INTO `campus`.`material`(`id`,`title`,`desc`,`author_id`,`teacher_id`,`subj_id`,`type_id`,`kind_id`,`term`,`year`,`created`,`updated`,`status`) VALUES ( NULL,'Материал2',NULL,NULL,$random[1],$random[1],$random[1],$random[1],$random[1],NULL,NULL,NULL,'0');";
+            echo Yii::app()->db->createCommand($sql)->execute();
+            
         }
 	/**
 	 * Creates a new model.
