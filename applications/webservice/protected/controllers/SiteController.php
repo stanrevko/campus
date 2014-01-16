@@ -123,9 +123,13 @@
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Material');
-		$this->render('index',array(
-			'dataProvider'=>$dataProvider,
+		$model=new Material('search');
+		$model->unsetAttributes();  // clear any default values
+		if(isset($_GET['Material']))
+			$model->attributes=$_GET['Material'];
+
+		$this->render('index',array(			
+                    'model'=>$model,
 		));
 	}
 

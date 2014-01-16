@@ -675,3 +675,207 @@ REQUEST_URI=/site/post.html
 HTTP_REFERER=http://campus.dev/site/
 ---
 >>>>>>> 390342df27c243a3243e028ebdcb08feac210d13
+2014/01/16 11:09:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\www\campus\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/01/16 11:09:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "post.html".' in D:\www\campus\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController('post.html')
+#1 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#3 {main}
+REQUEST_URI=/post.html
+HTTP_REFERER=http://campus.dev/
+---
+2014/01/16 11:17:02 [error] [exception.CException] exception 'CException' with message 'Property "CListView.class" is not defined.' in D:\www\campus\framework\base\CComponent.php:174
+Stack trace:
+#0 D:\www\campus\framework\web\CWidgetFactory.php(162): CComponent->__set('class', 'span 7')
+#1 D:\www\campus\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'zii.widgets.CLi...', Array)
+#2 D:\www\campus\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#3 D:\www\campus\applications\webservice\themes\basic\views\site\index.php(18): CBaseController->widget('zii.widgets.CLi...', Array)
+#4 D:\www\campus\framework\web\CBaseController.php(127): require('D:\www\campus\a...')
+#5 D:\www\campus\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\www\campus\a...', Array, true)
+#6 D:\www\campus\framework\web\CController.php(870): CBaseController->renderFile('D:\www\campus\a...', Array, true)
+#7 D:\www\campus\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#8 D:\www\campus\applications\webservice\protected\controllers\SiteController.php(129): CController->render('index', Array)
+#9 D:\www\campus\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#10 D:\www\campus\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 D:\www\campus\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 D:\www\campus\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\www\campus\framework\web\CWebApplication.php(276): CController->run('')
+#14 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#15 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#17 {main}
+REQUEST_URI=/
+---
+2014/01/16 11:36:30 [error] [php] Undefined variable: form (D:\www\campus\applications\webservice\themes\basic\views\site\_filters.php:2)
+Stack trace:
+#0 D:\www\campus\framework\web\CController.php(870): SiteController->renderFile()
+#1 D:\www\campus\applications\webservice\themes\basic\views\site\index.php(12): SiteController->renderPartial()
+#2 D:\www\campus\framework\web\CBaseController.php(127): require()
+#3 D:\www\campus\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#4 D:\www\campus\framework\web\CController.php(870): SiteController->renderFile()
+#5 D:\www\campus\framework\web\CController.php(783): SiteController->renderPartial()
+#6 D:\www\campus\applications\webservice\protected\controllers\SiteController.php(129): SiteController->render()
+#7 D:\www\campus\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#8 D:\www\campus\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 D:\www\campus\framework\web\CController.php(287): SiteController->runAction()
+#10 D:\www\campus\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#11 D:\www\campus\framework\web\CWebApplication.php(276): SiteController->run()
+#12 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#13 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\www\campus\applications\webservice\index.php(8): CWebApplication->run()
+REQUEST_URI=/site/index/Material_sort/created.desc
+2014/01/16 11:37:16 [error] [php] Undefined variable: model (D:\www\campus\applications\webservice\themes\basic\views\site\_filters.php:2)
+Stack trace:
+#0 D:\www\campus\framework\web\CController.php(870): SiteController->renderFile()
+#1 D:\www\campus\applications\webservice\themes\basic\views\site\index.php(12): SiteController->renderPartial()
+#2 D:\www\campus\framework\web\CBaseController.php(127): require()
+#3 D:\www\campus\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#4 D:\www\campus\framework\web\CController.php(870): SiteController->renderFile()
+#5 D:\www\campus\framework\web\CController.php(783): SiteController->renderPartial()
+#6 D:\www\campus\applications\webservice\protected\controllers\SiteController.php(129): SiteController->render()
+#7 D:\www\campus\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#8 D:\www\campus\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 D:\www\campus\framework\web\CController.php(287): SiteController->runAction()
+#10 D:\www\campus\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#11 D:\www\campus\framework\web\CWebApplication.php(276): SiteController->run()
+#12 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#13 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\www\campus\applications\webservice\index.php(8): CWebApplication->run()
+REQUEST_URI=/site/index/Material_sort/created.desc
+2014/01/16 11:37:31 [error] [php] Trying to get property of non-object (D:\www\campus\framework\web\helpers\CHtml.php:2044)
+Stack trace:
+#0 D:\www\campus\framework\web\CBaseController.php(127): require()
+#1 D:\www\campus\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#2 D:\www\campus\framework\web\CController.php(870): SiteController->renderFile()
+#3 D:\www\campus\applications\webservice\themes\basic\views\site\index.php(12): SiteController->renderPartial()
+#4 D:\www\campus\framework\web\CBaseController.php(127): require()
+#5 D:\www\campus\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#6 D:\www\campus\framework\web\CController.php(870): SiteController->renderFile()
+#7 D:\www\campus\framework\web\CController.php(783): SiteController->renderPartial()
+#8 D:\www\campus\applications\webservice\protected\controllers\SiteController.php(129): SiteController->render()
+#9 D:\www\campus\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#10 D:\www\campus\framework\web\CController.php(309): CInlineAction->runWithParams()
+#11 D:\www\campus\framework\web\CController.php(287): SiteController->runAction()
+#12 D:\www\campus\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#13 D:\www\campus\framework\web\CWebApplication.php(276): SiteController->run()
+#14 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#15 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\www\campus\applications\webservice\index.php(8): CWebApplication->run()
+REQUEST_URI=/site/index/Material_sort/created.desc
+2014/01/16 11:37:46 [error] [php] Trying to get property of non-object (D:\www\campus\framework\web\helpers\CHtml.php:2044)
+Stack trace:
+#0 D:\www\campus\framework\web\CBaseController.php(127): require()
+#1 D:\www\campus\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#2 D:\www\campus\framework\web\CController.php(870): SiteController->renderFile()
+#3 D:\www\campus\applications\webservice\themes\basic\views\site\index.php(12): SiteController->renderPartial()
+#4 D:\www\campus\framework\web\CBaseController.php(127): require()
+#5 D:\www\campus\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#6 D:\www\campus\framework\web\CController.php(870): SiteController->renderFile()
+#7 D:\www\campus\framework\web\CController.php(783): SiteController->renderPartial()
+#8 D:\www\campus\applications\webservice\protected\controllers\SiteController.php(129): SiteController->render()
+#9 D:\www\campus\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#10 D:\www\campus\framework\web\CController.php(309): CInlineAction->runWithParams()
+#11 D:\www\campus\framework\web\CController.php(287): SiteController->runAction()
+#12 D:\www\campus\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#13 D:\www\campus\framework\web\CWebApplication.php(276): SiteController->run()
+#14 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#15 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\www\campus\applications\webservice\index.php(8): CWebApplication->run()
+REQUEST_URI=/site/index/Material_sort/created.desc
+2014/01/16 11:37:59 [error] [php] Trying to get property of non-object (D:\www\campus\framework\web\helpers\CHtml.php:2044)
+Stack trace:
+#0 D:\www\campus\framework\web\CBaseController.php(127): require()
+#1 D:\www\campus\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#2 D:\www\campus\framework\web\CController.php(870): SiteController->renderFile()
+#3 D:\www\campus\applications\webservice\themes\basic\views\site\index.php(12): SiteController->renderPartial()
+#4 D:\www\campus\framework\web\CBaseController.php(127): require()
+#5 D:\www\campus\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#6 D:\www\campus\framework\web\CController.php(870): SiteController->renderFile()
+#7 D:\www\campus\framework\web\CController.php(783): SiteController->renderPartial()
+#8 D:\www\campus\applications\webservice\protected\controllers\SiteController.php(129): SiteController->render()
+#9 D:\www\campus\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#10 D:\www\campus\framework\web\CController.php(309): CInlineAction->runWithParams()
+#11 D:\www\campus\framework\web\CController.php(287): SiteController->runAction()
+#12 D:\www\campus\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#13 D:\www\campus\framework\web\CWebApplication.php(276): SiteController->run()
+#14 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#15 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\www\campus\applications\webservice\index.php(8): CWebApplication->run()
+REQUEST_URI=/site/index/Material_sort/created.desc
+2014/01/16 11:38:04 [error] [php] Trying to get property of non-object (D:\www\campus\framework\web\helpers\CHtml.php:2044)
+Stack trace:
+#0 D:\www\campus\framework\web\CBaseController.php(127): require()
+#1 D:\www\campus\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#2 D:\www\campus\framework\web\CController.php(870): SiteController->renderFile()
+#3 D:\www\campus\applications\webservice\themes\basic\views\site\index.php(12): SiteController->renderPartial()
+#4 D:\www\campus\framework\web\CBaseController.php(127): require()
+#5 D:\www\campus\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#6 D:\www\campus\framework\web\CController.php(870): SiteController->renderFile()
+#7 D:\www\campus\framework\web\CController.php(783): SiteController->renderPartial()
+#8 D:\www\campus\applications\webservice\protected\controllers\SiteController.php(129): SiteController->render()
+#9 D:\www\campus\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#10 D:\www\campus\framework\web\CController.php(309): CInlineAction->runWithParams()
+#11 D:\www\campus\framework\web\CController.php(287): SiteController->runAction()
+#12 D:\www\campus\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#13 D:\www\campus\framework\web\CWebApplication.php(276): SiteController->run()
+#14 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#15 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\www\campus\applications\webservice\index.php(8): CWebApplication->run()
+REQUEST_URI=/site/index/
+2014/01/16 11:38:22 [error] [php] Undefined variable: model (D:\www\campus\applications\webservice\themes\basic\views\site\index.php:12)
+Stack trace:
+#0 D:\www\campus\framework\web\CController.php(870): SiteController->renderFile()
+#1 D:\www\campus\framework\web\CController.php(783): SiteController->renderPartial()
+#2 D:\www\campus\applications\webservice\protected\controllers\SiteController.php(129): SiteController->render()
+#3 D:\www\campus\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 D:\www\campus\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\www\campus\framework\web\CController.php(287): SiteController->runAction()
+#6 D:\www\campus\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 D:\www\campus\framework\web\CWebApplication.php(276): SiteController->run()
+#8 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\www\campus\applications\webservice\index.php(8): CWebApplication->run()
+REQUEST_URI=/site/index/
+2014/01/16 11:39:08 [error] [php] Undefined variable: dataProvider (D:\www\campus\applications\webservice\protected\controllers\SiteController.php:132)
+Stack trace:
+#0 D:\www\campus\framework\web\CController.php(287): SiteController->runAction()
+#1 D:\www\campus\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#2 D:\www\campus\framework\web\CWebApplication.php(276): SiteController->run()
+#3 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\www\campus\applications\webservice\index.php(8): CWebApplication->run()
+REQUEST_URI=/site/index/
+2014/01/16 11:39:17 [error] [exception.CException] exception 'CException' with message 'Property "Material.dropdown" is not defined.' in D:\www\campus\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\www\campus\framework\db\ar\CActiveRecord.php(144): CComponent->__get('dropdown')
+#1 D:\www\campus\framework\web\helpers\CHtml.php(2044): CActiveRecord->__get('dropdown')
+#2 D:\www\campus\framework\web\helpers\CHtml.php(1402): CHtml::resolveValue(Object(Material), 'dropdown')
+#3 D:\www\campus\applications\webservice\themes\basic\views\site\_filters.php(2): CHtml::activeDropDownList(Object(Material), 'dropdown', Array)
+#4 D:\www\campus\framework\web\CBaseController.php(127): require('D:\www\campus\a...')
+#5 D:\www\campus\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\www\campus\a...', Array, true)
+#6 D:\www\campus\framework\web\CController.php(870): CBaseController->renderFile('D:\www\campus\a...', Array, true)
+#7 D:\www\campus\applications\webservice\themes\basic\views\site\index.php(12): CController->renderPartial('_filters', Array)
+#8 D:\www\campus\framework\web\CBaseController.php(127): require('D:\www\campus\a...')
+#9 D:\www\campus\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\www\campus\a...', Array, true)
+#10 D:\www\campus\framework\web\CController.php(870): CBaseController->renderFile('D:\www\campus\a...', Array, true)
+#11 D:\www\campus\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#12 D:\www\campus\applications\webservice\protected\controllers\SiteController.php(133): CController->render('index', Array)
+#13 D:\www\campus\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#14 D:\www\campus\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#15 D:\www\campus\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#16 D:\www\campus\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 D:\www\campus\framework\web\CWebApplication.php(276): CController->run('index')
+#18 D:\www\campus\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#19 D:\www\campus\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#20 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#21 {main}
+REQUEST_URI=/site/index/
+---
