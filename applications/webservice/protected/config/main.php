@@ -21,7 +21,7 @@ return CMap::mergeArray(
                 //'baseUrl' => 'www/themes',                  
                 ),
                 'bootstrap' => array(
-                    'class' => 'core.extensions.bootstrap.components.Bootstrap',
+                    'class' => 'core.extensions.bootstrap.components.Bootstrap',                    
                 ),
                 'widgetFactory' => array(
                     'enableSkin' => true,
@@ -36,9 +36,7 @@ return CMap::mergeArray(
                 ),
                 'cache' => array(
                     'class' => 'system.caching.CFileCache',
-                    
                 ),
             ),
                 )
 );
-?>

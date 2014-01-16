@@ -3,6 +3,8 @@
 	/**
 	 * @return array action filters
 	 */
+     
+     public $layout = "//layouts/column2";
 	public function filters()
 	{
 		return array(
@@ -15,6 +17,8 @@
 	 * This method is used by the 'accessControl' filter.
 	 * @return array access control rules
 	 */
+                        
+        
 	public function accessRules()
 	{
 		return array(
@@ -75,7 +79,7 @@
 	 * If creation is successful, the browser will be redirected to the 'view' page.
 	 */
 	public function actionCreate()
-	{
+	{ 
 		$model=new Material;
 
 		// Uncomment the following line if AJAX validation is needed
@@ -141,7 +145,7 @@
 	 * Lists all models.
 	 */
 	public function actionIndex()
-	{
+	{ $this->layout = "//layouts/column1";
 		$model=new Material('search');
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Material']))

@@ -11,9 +11,9 @@
  * @author Stanislav
  */
 class FiltersHelper {
-
+    public static $_tables = false;
     //put your code here
-    private static $tables = array('subject', 'teacher', 'type', 'kind');
+    private static $tableNames = array('subject', 'teacher', 'type', 'kind');
 
     public static function getTableContent($tableName) {
 //        $dependency = new CDbCacheDependency('SELECT MAX(update_time) FROM tbl_post');
@@ -25,20 +25,20 @@ class FiltersHelper {
     }
 
     public static function getTables() {
-        $result = false;
+        self::$_tables = false;
         $id = "FilterTables";
-        //$result = Yii::app()->cache->get($id);
-        if ($result === false) {
+        //self::$_tables = Yii::app()->cache->get($id);
+        if (self::$_tables === false) {
             // оновлюємо $value, тому що змінна не знайдена у кеші,
             // і зберігаємо в кеш для подальшого використання:
-            foreach (self::$tables as $key => $value) {
+            foreach (self::$tableNames as $key => $value) {
                 $tableName = is_array($value) ? $key : $value;
-                $result[$tableName] = self::getTableContent($tableName);
+                self::$_tables[$tableName] = self::getTableContent($tableName);
             }
         }
 
-        Yii::app()->cache->set($id, $result);
-        return $result;
+        Yii::app()->cache->set($id, self::$_tables);
+        return self::$_tables;
     }
 
     public static function getTerms() {
@@ -60,6 +60,17 @@ class FiltersHelper {
             $years[$year] = $year;
         }
         return $years;
+    }
+    
+    public static function getStates(){
+        $result = array();
+        $result[-2] = 'Забраковано';
+        $result[-1] = 'Видалено';
+        $result[0] = 'Чорновик';
+        $result[1] = 'Очікує публікації';
+        $result[2] = 'Опубліковано';
+        
+        return $result;
     }
 
 }
