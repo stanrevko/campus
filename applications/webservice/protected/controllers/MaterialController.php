@@ -126,10 +126,15 @@ class MaterialController extends FrontController
 	 * Lists all models.
 	 */
 	public function actionIndex()
-	{
-		$dataProvider=new CActiveDataProvider('Material');
+	{ 
+		$model=new Material('search');
+		$model->unsetAttributes();  // clear any default values
+		if(isset($_GET['Material']))
+			$model->attributes=$_GET['Material'];
+
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
+                    'model'=>$model,
 		));
 	}
 

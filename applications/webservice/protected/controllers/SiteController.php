@@ -3,6 +3,8 @@
 	/**
 	 * @return array action filters
 	 */
+     
+     public $layout = "//layouts/column2";
 	public function filters()
 	{
 		return array(
@@ -15,6 +17,8 @@
 	 * This method is used by the 'accessControl' filter.
 	 * @return array access control rules
 	 */
+                        
+        
 	public function accessRules()
 	{
 		return array(
@@ -47,16 +51,35 @@
 		));
 	}
 
+
+
         public function actionTest(){
-            $arr = FiltersHelper::getTables();
-            var_dump($arr);
+            
+            $random= array(rand(1, 5));
+            srand();
+            $random[]=  bin_rand(1, 5);
+            srand();
+            $random[]=   bin_rand(1, 5);
+            srand();
+            $random[]=   bin_rand(1, 5);
+            srand();
+            $random[]=   bin_rand(1, 5);
+            srand();
+            $random[]=   bin_rand(1, 5);
+            srand();
+            $random[]=   bin_rand(1, 5);
+            
+            
+            $sql = "INSERT INTO `campus`.`material`(`id`,`title`,`desc`,`author_id`,`teacher_id`,`subj_id`,`type_id`,`kind_id`,`term`,`year`,`created`,`updated`,`status`) VALUES ( NULL,'Материал2',NULL,NULL,$random[1],$random[1],$random[1],$random[1],$random[1],NULL,NULL,NULL,'0');";
+            echo Yii::app()->db->createCommand($sql)->execute();
+            
         }
 	/**
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
 	 */
 	public function actionCreate()
-	{
+	{ 
 		$model=new Material;
 
 		// Uncomment the following line if AJAX validation is needed
@@ -122,10 +145,14 @@
 	 * Lists all models.
 	 */
 	public function actionIndex()
-	{
-		$dataProvider=new CActiveDataProvider('Material');
-		$this->render('index',array(
-			'dataProvider'=>$dataProvider,
+	{ $this->layout = "//layouts/column1";
+		$model=new Material('search');
+		$model->unsetAttributes();  // clear any default values
+		if(isset($_GET['Material']))
+			$model->attributes=$_GET['Material'];
+
+		$this->render('index',array(			
+                    'model'=>$model,
 		));
 	}
 

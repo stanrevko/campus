@@ -54,12 +54,13 @@ class Material extends CActiveRecord
 		return array(
 			array('author_id, teacher_id, subj_id, type_id, kind_id', 'numerical', 'integerOnly'=>true),
 			array('title', 'length', 'max'=>300),
-			array('term', 'length', 'max'=>1),
+			array('term', 'length', 'max'=>2),
 			array('year', 'length', 'max'=>4),
+                    array('state', 'length', 'max'=>4),
 			array('desc, created, updated', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, title, desc, author_id, teacher_id, subj_id, type_id, kind_id, term, year, created, updated', 'safe', 'on'=>'search'),
+			array('id, title, desc, author_id, teacher_id, subj_id, type_id, kind_id, term, year, created, updated, state', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -97,6 +98,7 @@ class Material extends CActiveRecord
 			'year' => 'Year',
 			'created' => 'Created',
 			'updated' => 'Updated',
+                    'state' => 'Статус',
 		);
 	}
 
@@ -123,9 +125,19 @@ class Material extends CActiveRecord
 		$criteria->compare('year',$this->year,true);
 		$criteria->compare('created',$this->created,true);
 		$criteria->compare('updated',$this->updated,true);
-
+                $criteria->compare('state',$this->state,true);
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
 	}
+        
+        public function behaviors(){
+	return array(
+		'CTimestampBehavior' => array(
+			'class' => 'zii.behaviors.CTimestampBehavior',
+			'createAttribute' => 'created',
+			'updateAttribute' => 'updated',
+		)
+	);
+}
 }

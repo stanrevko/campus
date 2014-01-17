@@ -1,11 +1,12 @@
 <?php
-
 Yii::setPathOfAlias('core', dirname(__FILE__) . DIRECTORY_SEPARATOR . '..');
 Yii::setPathOfAlias('images', dirname(__FILE__) . DIRECTORY_SEPARATOR . '../../applications/images');
-
+if(YII_DEBUG)
+    require_once dirname(__FILE__) . DIRECTORY_SEPARATOR . '../extensions/kint/Kint.class.php';
 return array(
     'name' => 'PTI-campus',
-   
+    'sourceLanguage'=>'ru',
+    'language'=>'ru',
     'import' => array(
         'core.models.*',
         'core.components.*',
