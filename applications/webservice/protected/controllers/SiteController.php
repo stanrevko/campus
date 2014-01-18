@@ -1,5 +1,5 @@
 <?php
- class SiteController extends FrontController{
+ class SiteController extends Controller{
 	/**
 	 * @return array action filters
 	 */
@@ -54,23 +54,11 @@
 
 
         public function actionTest(){
+            $input = array(1,2,3,4,5);
+            $random= array_rand ( $input, 2 );
+                       
             
-            $random= array(rand(1, 5));
-            srand();
-            $random[]=  bin_rand(1, 5);
-            srand();
-            $random[]=   bin_rand(1, 5);
-            srand();
-            $random[]=   bin_rand(1, 5);
-            srand();
-            $random[]=   bin_rand(1, 5);
-            srand();
-            $random[]=   bin_rand(1, 5);
-            srand();
-            $random[]=   bin_rand(1, 5);
-            
-            
-            $sql = "INSERT INTO `campus`.`material`(`id`,`title`,`desc`,`author_id`,`teacher_id`,`subj_id`,`type_id`,`kind_id`,`term`,`year`,`created`,`updated`,`status`) VALUES ( NULL,'Материал2',NULL,NULL,$random[1],$random[1],$random[1],$random[1],$random[1],NULL,NULL,NULL,'0');";
+            $sql = "INSERT INTO `campus`.`material`(`id`,`title`,`desc`,`author_id`,`teacher_id`,`subj_id`,`type_id`,`kind_id`,`term`,`year`,`created`,`updated`,`state`) VALUES ( NULL,'Материал2',NULL,NULL,$random[1],$random[1],$random[1],$random[1],$random[1],NULL,NULL,NULL,'0');";
             echo Yii::app()->db->createCommand($sql)->execute();
             
         }
