@@ -43,12 +43,20 @@ class FiltersHelper {
 
     public static function getTerms() {
         $year = 1;
-        for ($i = 1; $i < 12; $i++) {
-            if ($i % 2 == 0)
-                ++$year;
-            $terms[$i] = $i . " - Курс $year/" . ($i % 2 + 1);
+        for ($i = 1; $i < 13; $i++) {
+            //if ($i % 2 == 0)     ++$year;
+            $year = ceil($i / 2);
+            $sem = ($i % 2 == 0)? 2 : 1;
+            $terms[$i] = self::getTermLabel($i);
         }
         return $terms;
+    }
+    
+    public static function getTermLabel($i){
+           $year = ceil($i / 2);
+            $sem = ($i % 2 == 0)? 2 : 1;
+            return   "Курс $year/$sem";
+        
     }
 
     public static function getYears() {
