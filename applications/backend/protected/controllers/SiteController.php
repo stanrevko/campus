@@ -48,9 +48,7 @@ class SiteController extends CBackendController
 						),
 					'teacher' => array( 'modelName' => 'Teacher', 'title'=>'name'),
 					'file' => array( 'modelName' => 'File' ),
-					'subject' => array( 'modelName' => 'Subject',
-					//'title' => 'title',
-					),
+					'subject' => array( 'modelName' => 'Subject',),
 					'type' => array( 'modelName' => 'Type','title' => 'title', ),
 					'kind' => array( 'modelName' => 'Kind','title' => 'title', ),
                 ));

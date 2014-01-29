@@ -2597,3 +2597,83 @@ Stack trace:
 REQUEST_URI=/site/contact
 HTTP_REFERER=http://campus.dev/user/registration
 ---
+2014/01/24 13:55:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Неможливо обробити запит "favicon.ico".' in D:\www\campus\vendor\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\www\campus\vendor\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 D:\www\campus\vendor\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/01/24 13:56:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Неможливо обробити запит "images/images".' in D:\www\campus\vendor\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\www\campus\vendor\framework\web\CWebApplication.php(135): CWebApplication->runController('images/images')
+#1 D:\www\campus\vendor\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/images
+---
+2014/01/24 13:56:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Неможливо обробити запит "images/images.jpg".' in D:\www\campus\vendor\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\www\campus\vendor\framework\web\CWebApplication.php(135): CWebApplication->runController('images/images.j...')
+#1 D:\www\campus\vendor\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/images.jpg
+---
+2014/01/24 13:56:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Неможливо обробити запит "images.jpg".' in D:\www\campus\vendor\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\www\campus\vendor\framework\web\CWebApplication.php(135): CWebApplication->runController('images.jpg')
+#1 D:\www\campus\vendor\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#3 {main}
+REQUEST_URI=/images.jpg
+---
+2014/01/24 13:56:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Неможливо обробити запит "img/images.jpg".' in D:\www\campus\vendor\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\www\campus\vendor\framework\web\CWebApplication.php(135): CWebApplication->runController('img/images.jpg')
+#1 D:\www\campus\vendor\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/images.jpg
+---
+2014/01/24 13:58:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Неможливо обробити запит "img/images.jpg".' in D:\www\campus\vendor\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\www\campus\vendor\framework\web\CWebApplication.php(135): CWebApplication->runController('img/images.jpg')
+#1 D:\www\campus\vendor\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/images.jpg
+---
+2014/01/24 13:58:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Неможливо обробити запит "img/images.jpg".' in D:\www\campus\vendor\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\www\campus\vendor\framework\web\CWebApplication.php(135): CWebApplication->runController('img/images.jpg')
+#1 D:\www\campus\vendor\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/images.jpg
+---
+2014/01/24 13:58:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Неможливо обробити запит "img/images.jpg".' in D:\www\campus\vendor\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\www\campus\vendor\framework\web\CWebApplication.php(135): CWebApplication->runController('img/images.jpg')
+#1 D:\www\campus\vendor\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/images.jpg
+---
+2014/01/24 13:58:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Неможливо обробити запит "img/images.jpg".' in D:\www\campus\vendor\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\www\campus\vendor\framework\web\CWebApplication.php(135): CWebApplication->runController('img/images.jpg')
+#1 D:\www\campus\vendor\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/images.jpg
+---
+2014/01/24 13:58:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Неможливо обробити запит "img/images.jpg".' in D:\www\campus\vendor\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\www\campus\vendor\framework\web\CWebApplication.php(135): CWebApplication->runController('img/images.jpg')
+#1 D:\www\campus\vendor\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/images.jpg
+---

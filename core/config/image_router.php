@@ -5,7 +5,7 @@
             'class' => 'core.components.ImageRouter.ImageRouter',
         
         // absolute URL to folder with images (ex. '//hostname/projectName/applications/imagesFolderAllias') 
-            'imagesFolderAbsoluteUrl' => '...',
+            'imagesFolderAbsoluteUrl' => 'D:\www\campus\applications\images',
         
         // folder name where images will be saved 
             'imagesFolderAllias' => 'images',
