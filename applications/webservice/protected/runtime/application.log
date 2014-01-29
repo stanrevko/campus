@@ -2597,83 +2597,443 @@ Stack trace:
 REQUEST_URI=/site/contact
 HTTP_REFERER=http://campus.dev/user/registration
 ---
-2014/01/24 13:55:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Неможливо обробити запит "favicon.ico".' in D:\www\campus\vendor\framework\web\CWebApplication.php:280
+2014/01/18 17:24:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Неможливо обробити запит "about/view/about".' in D:\www\campus\vendor\framework\web\CWebApplication.php:286
 Stack trace:
-#0 D:\www\campus\vendor\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
-#1 D:\www\campus\vendor\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#0 D:\www\campus\vendor\framework\web\CWebApplication.php(141): CWebApplication->runController('about/view/abou...')
+#1 D:\www\campus\vendor\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#3 {main}
+REQUEST_URI=/about/view/about
+HTTP_REFERER=http://campus.dev/site
+---
+2014/01/18 17:24:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системі не вдалося знайти запитувану дію "contact".' in D:\www\campus\vendor\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\campus\vendor\framework\web\CController.php(270): CController->missingAction('contact')
+#1 D:\www\campus\vendor\framework\web\CWebApplication.php(282): CController->run('contact')
+#2 D:\www\campus\vendor\framework\web\CWebApplication.php(141): CWebApplication->runController('site/contact')
+#3 D:\www\campus\vendor\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/contact
+HTTP_REFERER=http://campus.dev/site
+---
+2014/01/18 17:39:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Неможливо обробити запит "1".' in D:\www\campus\vendor\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\campus\vendor\framework\web\CWebApplication.php(141): CWebApplication->runController('1')
+#1 D:\www\campus\vendor\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#3 {main}
+REQUEST_URI=/1
+HTTP_REFERER=http://campus.dev/site
+---
+2014/01/18 20:47:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Неможливо обробити запит "1".' in D:\www\campus\vendor\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\campus\vendor\framework\web\CWebApplication.php(141): CWebApplication->runController('1')
+#1 D:\www\campus\vendor\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#3 {main}
+REQUEST_URI=/1
+HTTP_REFERER=http://campus.dev/site
+---
+2014/01/18 20:47:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Неможливо обробити запит "about/view/about".' in D:\www\campus\vendor\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\campus\vendor\framework\web\CWebApplication.php(141): CWebApplication->runController('about/view/abou...')
+#1 D:\www\campus\vendor\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#3 {main}
+REQUEST_URI=/about/view/about
+HTTP_REFERER=http://campus.dev/site
+---
+2014/01/18 20:48:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Неможливо обробити запит "about/view/about".' in D:\www\campus\vendor\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\campus\vendor\framework\web\CWebApplication.php(141): CWebApplication->runController('about/view/abou...')
+#1 D:\www\campus\vendor\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#3 {main}
+REQUEST_URI=/about/view/about
+HTTP_REFERER=http://campus.dev/site
+---
+2014/01/18 20:48:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системі не вдалося знайти запитувану дію "contact".' in D:\www\campus\vendor\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\campus\vendor\framework\web\CController.php(270): CController->missingAction('contact')
+#1 D:\www\campus\vendor\framework\web\CWebApplication.php(282): CController->run('contact')
+#2 D:\www\campus\vendor\framework\web\CWebApplication.php(141): CWebApplication->runController('site/contact')
+#3 D:\www\campus\vendor\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/contact
+HTTP_REFERER=http://campus.dev/site
+---
+2014/01/18 20:49:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Неможливо обробити запит "3".' in D:\www\campus\vendor\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\campus\vendor\framework\web\CWebApplication.php(141): CWebApplication->runController('3')
+#1 D:\www\campus\vendor\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#3 {main}
+REQUEST_URI=/3
+HTTP_REFERER=http://campus.dev/site
+---
+2014/01/18 21:48:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Неможливо обробити запит "about/view/about".' in D:\www\campus\vendor\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\campus\vendor\framework\web\CWebApplication.php(141): CWebApplication->runController('about/view/abou...')
+#1 D:\www\campus\vendor\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#3 {main}
+REQUEST_URI=/about/view/about
+HTTP_REFERER=http://campus.dev/site
+---
+2014/01/18 23:26:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Неможливо обробити запит "about/view/about".' in D:\www\campus\vendor\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\campus\vendor\framework\web\CWebApplication.php(141): CWebApplication->runController('about/view/abou...')
+#1 D:\www\campus\vendor\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#3 {main}
+REQUEST_URI=/about/view/about
+HTTP_REFERER=http://campus.dev/
+---
+2014/01/18 23:26:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Неможливо обробити запит "about/view/about".' in D:\www\campus\vendor\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\campus\vendor\framework\web\CWebApplication.php(141): CWebApplication->runController('about/view/abou...')
+#1 D:\www\campus\vendor\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#3 {main}
+REQUEST_URI=/about/view/about
+HTTP_REFERER=http://campus.dev/
+---
+2014/01/18 23:40:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Неможливо обробити запит "about/view/about".' in D:\www\campus\vendor\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\campus\vendor\framework\web\CWebApplication.php(141): CWebApplication->runController('about/view/abou...')
+#1 D:\www\campus\vendor\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#3 {main}
+REQUEST_URI=/about/view/about
+HTTP_REFERER=http://campus.dev/
+---
+2014/01/18 23:40:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Неможливо обробити запит "about/view/about".' in D:\www\campus\vendor\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\campus\vendor\framework\web\CWebApplication.php(141): CWebApplication->runController('about/view/abou...')
+#1 D:\www\campus\vendor\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#3 {main}
+REQUEST_URI=/about/view/about
+HTTP_REFERER=http://campus.dev/
+---
+2014/01/18 23:40:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Неможливо обробити запит "about/view/about".' in D:\www\campus\vendor\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\campus\vendor\framework\web\CWebApplication.php(141): CWebApplication->runController('about/view/abou...')
+#1 D:\www\campus\vendor\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#3 {main}
+REQUEST_URI=/about/view/about
+---
+2014/01/19 11:37:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Неможливо обробити запит "1".' in D:\www\campus\vendor\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\campus\vendor\framework\web\CWebApplication.php(141): CWebApplication->runController('1')
+#1 D:\www\campus\vendor\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#3 {main}
+REQUEST_URI=/1
+HTTP_REFERER=http://campus.dev/site
+---
+2014/01/19 11:37:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системі не вдалося знайти запитувану дію "contact".' in D:\www\campus\vendor\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\campus\vendor\framework\web\CController.php(270): CController->missingAction('contact')
+#1 D:\www\campus\vendor\framework\web\CWebApplication.php(282): CController->run('contact')
+#2 D:\www\campus\vendor\framework\web\CWebApplication.php(141): CWebApplication->runController('site/contact')
+#3 D:\www\campus\vendor\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/contact
+HTTP_REFERER=http://campus.dev/site
+---
+2014/01/21 22:04:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Неможливо обробити запит "favicon.ico".' in D:\www\campus\vendor\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\campus\vendor\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\www\campus\vendor\framework\base\CApplication.php(169): CWebApplication->processRequest()
 #2 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
 #3 {main}
 REQUEST_URI=/favicon.ico
 ---
-2014/01/24 13:56:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Неможливо обробити запит "images/images".' in D:\www\campus\vendor\framework\web\CWebApplication.php:280
+2014/01/21 23:08:00 [error] [exception.CException] exception 'CException' with message 'Псевдонім "application.components.MyYiiFileManViewer" невірний. Переконайтесь, що він вказує на існуючий PHP файл.' in D:\www\campus\vendor\framework\YiiBase.php:316
 Stack trace:
-#0 D:\www\campus\vendor\framework\web\CWebApplication.php(135): CWebApplication->runController('images/images')
-#1 D:\www\campus\vendor\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#2 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
-#3 {main}
-REQUEST_URI=/images/images
+#0 D:\www\campus\vendor\framework\web\CWidgetFactory.php(146): YiiBase::import('application.com...', true)
+#1 D:\www\campus\vendor\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'application.com...', Array)
+#2 D:\www\campus\vendor\framework\web\CBaseController.php(172): CBaseController->createWidget('application.com...', Array)
+#3 D:\www\campus\applications\webservice\themes\basic\views\site\_form.php(119): CBaseController->widget('application.com...', Array)
+#4 D:\www\campus\vendor\framework\web\CBaseController.php(126): require('D:\www\campus\a...')
+#5 D:\www\campus\vendor\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\www\campus\a...', Array, true)
+#6 D:\www\campus\vendor\framework\web\CController.php(869): CBaseController->renderFile('D:\www\campus\a...', Array, true)
+#7 D:\www\campus\applications\webservice\themes\basic\views\site\create.php(16): CController->renderPartial('_form', Array)
+#8 D:\www\campus\vendor\framework\web\CBaseController.php(126): require('D:\www\campus\a...')
+#9 D:\www\campus\vendor\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\www\campus\a...', Array, true)
+#10 D:\www\campus\vendor\framework\web\CController.php(869): CBaseController->renderFile('D:\www\campus\a...', Array, true)
+#11 D:\www\campus\vendor\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#12 D:\www\campus\applications\webservice\protected\controllers\SiteController.php(89): CController->render('create', Array)
+#13 D:\www\campus\vendor\framework\web\actions\CInlineAction.php(49): SiteController->actionCreate()
+#14 D:\www\campus\vendor\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 D:\www\campus\vendor\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#16 D:\www\campus\vendor\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 D:\www\campus\vendor\framework\web\CWebApplication.php(282): CController->run('create')
+#18 D:\www\campus\vendor\framework\web\CWebApplication.php(141): CWebApplication->runController('site/create')
+#19 D:\www\campus\vendor\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#20 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#21 {main}
+REQUEST_URI=/site/create
 ---
-2014/01/24 13:56:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Неможливо обробити запит "images/images.jpg".' in D:\www\campus\vendor\framework\web\CWebApplication.php:280
+2014/01/21 23:08:42 [error] [exception.CException] exception 'CException' with message 'Псевдонім "core.extensions.yiifilemanagerfilepicker.components.MyYiiFileManViewer" невірний. Переконайтесь, що він вказує на існуючий PHP файл.' in D:\www\campus\vendor\framework\YiiBase.php:316
 Stack trace:
-#0 D:\www\campus\vendor\framework\web\CWebApplication.php(135): CWebApplication->runController('images/images.j...')
-#1 D:\www\campus\vendor\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#2 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
-#3 {main}
-REQUEST_URI=/images/images.jpg
+#0 D:\www\campus\vendor\framework\web\CWidgetFactory.php(146): YiiBase::import('core.extensions...', true)
+#1 D:\www\campus\vendor\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'core.extensions...', Array)
+#2 D:\www\campus\vendor\framework\web\CBaseController.php(172): CBaseController->createWidget('core.extensions...', Array)
+#3 D:\www\campus\applications\webservice\themes\basic\views\site\_form.php(119): CBaseController->widget('core.extensions...', Array)
+#4 D:\www\campus\vendor\framework\web\CBaseController.php(126): require('D:\www\campus\a...')
+#5 D:\www\campus\vendor\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\www\campus\a...', Array, true)
+#6 D:\www\campus\vendor\framework\web\CController.php(869): CBaseController->renderFile('D:\www\campus\a...', Array, true)
+#7 D:\www\campus\applications\webservice\themes\basic\views\site\create.php(16): CController->renderPartial('_form', Array)
+#8 D:\www\campus\vendor\framework\web\CBaseController.php(126): require('D:\www\campus\a...')
+#9 D:\www\campus\vendor\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\www\campus\a...', Array, true)
+#10 D:\www\campus\vendor\framework\web\CController.php(869): CBaseController->renderFile('D:\www\campus\a...', Array, true)
+#11 D:\www\campus\vendor\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#12 D:\www\campus\applications\webservice\protected\controllers\SiteController.php(89): CController->render('create', Array)
+#13 D:\www\campus\vendor\framework\web\actions\CInlineAction.php(49): SiteController->actionCreate()
+#14 D:\www\campus\vendor\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 D:\www\campus\vendor\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#16 D:\www\campus\vendor\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 D:\www\campus\vendor\framework\web\CWebApplication.php(282): CController->run('create')
+#18 D:\www\campus\vendor\framework\web\CWebApplication.php(141): CWebApplication->runController('site/create')
+#19 D:\www\campus\vendor\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#20 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#21 {main}
+REQUEST_URI=/site/create
 ---
-2014/01/24 13:56:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Неможливо обробити запит "images.jpg".' in D:\www\campus\vendor\framework\web\CWebApplication.php:280
+2014/01/21 23:09:03 [error] [exception.CException] exception 'CException' with message 'Псевдонім "application.extensions.yiifilemanager.YiiDiskFileManager" невірний. Переконайтесь, що він вказує на існуючий PHP файл.' in D:\www\campus\vendor\framework\YiiBase.php:316
 Stack trace:
-#0 D:\www\campus\vendor\framework\web\CWebApplication.php(135): CWebApplication->runController('images.jpg')
-#1 D:\www\campus\vendor\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#2 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
-#3 {main}
-REQUEST_URI=/images.jpg
+#0 D:\www\campus\vendor\framework\YiiBase.php(196): YiiBase::import('application.ext...', true)
+#1 D:\www\campus\vendor\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 D:\www\campus\vendor\framework\base\CModule.php(103): CModule->getComponent('fileman')
+#3 D:\www\campus\core\extensions\yiifilemanagerfilepicker\component\MyYiiFileManViewer.php(41): CModule->__get('fileman')
+#4 D:\www\campus\core\extensions\yiifilemanagerfilepicker\YiiFileManagerFilePicker.php(133): MyYiiFileManViewer->yiifileman_data()
+#5 D:\www\campus\vendor\framework\web\CBaseController.php(173): YiiFileManagerFilePicker->run()
+#6 D:\www\campus\applications\webservice\themes\basic\views\site\_form.php(119): CBaseController->widget('core.extensions...', Array)
+#7 D:\www\campus\vendor\framework\web\CBaseController.php(126): require('D:\www\campus\a...')
+#8 D:\www\campus\vendor\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\www\campus\a...', Array, true)
+#9 D:\www\campus\vendor\framework\web\CController.php(869): CBaseController->renderFile('D:\www\campus\a...', Array, true)
+#10 D:\www\campus\applications\webservice\themes\basic\views\site\create.php(16): CController->renderPartial('_form', Array)
+#11 D:\www\campus\vendor\framework\web\CBaseController.php(126): require('D:\www\campus\a...')
+#12 D:\www\campus\vendor\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\www\campus\a...', Array, true)
+#13 D:\www\campus\vendor\framework\web\CController.php(869): CBaseController->renderFile('D:\www\campus\a...', Array, true)
+#14 D:\www\campus\vendor\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#15 D:\www\campus\applications\webservice\protected\controllers\SiteController.php(89): CController->render('create', Array)
+#16 D:\www\campus\vendor\framework\web\actions\CInlineAction.php(49): SiteController->actionCreate()
+#17 D:\www\campus\vendor\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 D:\www\campus\vendor\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 D:\www\campus\vendor\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\www\campus\vendor\framework\web\CWebApplication.php(282): CController->run('create')
+#21 D:\www\campus\vendor\framework\web\CWebApplication.php(141): CWebApplication->runController('site/create')
+#22 D:\www\campus\vendor\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#23 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#24 {main}
+REQUEST_URI=/site/create
 ---
-2014/01/24 13:56:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Неможливо обробити запит "img/images.jpg".' in D:\www\campus\vendor\framework\web\CWebApplication.php:280
+2014/01/21 23:11:41 [error] [exception.CException] exception 'CException' with message 'Псевдонім "application.extensions.yiifilemanager.YiiDiskFileManager" невірний. Переконайтесь, що він вказує на існуючий PHP файл.' in D:\www\campus\vendor\framework\YiiBase.php:316
 Stack trace:
-#0 D:\www\campus\vendor\framework\web\CWebApplication.php(135): CWebApplication->runController('img/images.jpg')
-#1 D:\www\campus\vendor\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#2 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
-#3 {main}
-REQUEST_URI=/img/images.jpg
+#0 D:\www\campus\vendor\framework\YiiBase.php(196): YiiBase::import('application.ext...', true)
+#1 D:\www\campus\vendor\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 D:\www\campus\vendor\framework\base\CModule.php(103): CModule->getComponent('fileman')
+#3 D:\www\campus\core\extensions\yiifilemanagerfilepicker\component\MyYiiFileManViewer.php(41): CModule->__get('fileman')
+#4 D:\www\campus\core\extensions\yiifilemanagerfilepicker\YiiFileManagerFilePicker.php(133): MyYiiFileManViewer->yiifileman_data()
+#5 D:\www\campus\vendor\framework\web\CBaseController.php(173): YiiFileManagerFilePicker->run()
+#6 D:\www\campus\applications\webservice\themes\basic\views\site\_form.php(119): CBaseController->widget('core.extensions...', Array)
+#7 D:\www\campus\vendor\framework\web\CBaseController.php(126): require('D:\www\campus\a...')
+#8 D:\www\campus\vendor\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\www\campus\a...', Array, true)
+#9 D:\www\campus\vendor\framework\web\CController.php(869): CBaseController->renderFile('D:\www\campus\a...', Array, true)
+#10 D:\www\campus\applications\webservice\themes\basic\views\site\create.php(16): CController->renderPartial('_form', Array)
+#11 D:\www\campus\vendor\framework\web\CBaseController.php(126): require('D:\www\campus\a...')
+#12 D:\www\campus\vendor\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\www\campus\a...', Array, true)
+#13 D:\www\campus\vendor\framework\web\CController.php(869): CBaseController->renderFile('D:\www\campus\a...', Array, true)
+#14 D:\www\campus\vendor\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#15 D:\www\campus\applications\webservice\protected\controllers\SiteController.php(89): CController->render('create', Array)
+#16 D:\www\campus\vendor\framework\web\actions\CInlineAction.php(49): SiteController->actionCreate()
+#17 D:\www\campus\vendor\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 D:\www\campus\vendor\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 D:\www\campus\vendor\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\www\campus\vendor\framework\web\CWebApplication.php(282): CController->run('create')
+#21 D:\www\campus\vendor\framework\web\CWebApplication.php(141): CWebApplication->runController('site/create')
+#22 D:\www\campus\vendor\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#23 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#24 {main}
+REQUEST_URI=/site/create
 ---
-2014/01/24 13:58:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Неможливо обробити запит "img/images.jpg".' in D:\www\campus\vendor\framework\web\CWebApplication.php:280
+2014/01/21 23:14:53 [error] [exception.CException] exception 'CException' with message 'Псевдонім "application.extensions.yiifilemanager.YiiDiskFileManager" невірний. Переконайтесь, що він вказує на існуючий PHP файл.' in D:\www\campus\vendor\framework\YiiBase.php:316
 Stack trace:
-#0 D:\www\campus\vendor\framework\web\CWebApplication.php(135): CWebApplication->runController('img/images.jpg')
-#1 D:\www\campus\vendor\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#2 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
-#3 {main}
-REQUEST_URI=/img/images.jpg
+#0 D:\www\campus\vendor\framework\YiiBase.php(196): YiiBase::import('application.ext...', true)
+#1 D:\www\campus\vendor\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 D:\www\campus\vendor\framework\base\CModule.php(103): CModule->getComponent('fileman')
+#3 D:\www\campus\core\extensions\yiifilemanagerfilepicker\component\MyYiiFileManViewer.php(41): CModule->__get('fileman')
+#4 D:\www\campus\core\extensions\yiifilemanagerfilepicker\YiiFileManagerFilePicker.php(133): MyYiiFileManViewer->yiifileman_data()
+#5 D:\www\campus\vendor\framework\web\CBaseController.php(173): YiiFileManagerFilePicker->run()
+#6 D:\www\campus\applications\webservice\themes\basic\views\site\_form.php(119): CBaseController->widget('core.extensions...', Array)
+#7 D:\www\campus\vendor\framework\web\CBaseController.php(126): require('D:\www\campus\a...')
+#8 D:\www\campus\vendor\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\www\campus\a...', Array, true)
+#9 D:\www\campus\vendor\framework\web\CController.php(869): CBaseController->renderFile('D:\www\campus\a...', Array, true)
+#10 D:\www\campus\applications\webservice\themes\basic\views\site\create.php(16): CController->renderPartial('_form', Array)
+#11 D:\www\campus\vendor\framework\web\CBaseController.php(126): require('D:\www\campus\a...')
+#12 D:\www\campus\vendor\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\www\campus\a...', Array, true)
+#13 D:\www\campus\vendor\framework\web\CController.php(869): CBaseController->renderFile('D:\www\campus\a...', Array, true)
+#14 D:\www\campus\vendor\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#15 D:\www\campus\applications\webservice\protected\controllers\SiteController.php(89): CController->render('create', Array)
+#16 D:\www\campus\vendor\framework\web\actions\CInlineAction.php(49): SiteController->actionCreate()
+#17 D:\www\campus\vendor\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 D:\www\campus\vendor\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 D:\www\campus\vendor\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 D:\www\campus\vendor\framework\web\CWebApplication.php(282): CController->run('create')
+#21 D:\www\campus\vendor\framework\web\CWebApplication.php(141): CWebApplication->runController('site/create')
+#22 D:\www\campus\vendor\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#23 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#24 {main}
+REQUEST_URI=/site/create
 ---
-2014/01/24 13:58:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Неможливо обробити запит "img/images.jpg".' in D:\www\campus\vendor\framework\web\CWebApplication.php:280
+2014/01/21 23:16:47 [error] [php] Object of class MyYiiFileManViewer could not be converted to string (D:\www\campus\applications\webservice\themes\basic\views\site\_form.php:37)
 Stack trace:
-#0 D:\www\campus\vendor\framework\web\CWebApplication.php(135): CWebApplication->runController('img/images.jpg')
-#1 D:\www\campus\vendor\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#2 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
-#3 {main}
-REQUEST_URI=/img/images.jpg
+#0 D:\www\campus\vendor\framework\web\CController.php(869): SiteController->renderFile()
+#1 D:\www\campus\applications\webservice\themes\basic\views\site\create.php(16): SiteController->renderPartial()
+#2 D:\www\campus\vendor\framework\web\CBaseController.php(126): require()
+#3 D:\www\campus\vendor\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#4 D:\www\campus\vendor\framework\web\CController.php(869): SiteController->renderFile()
+#5 D:\www\campus\vendor\framework\web\CController.php(782): SiteController->renderPartial()
+#6 D:\www\campus\applications\webservice\protected\controllers\SiteController.php(89): SiteController->render()
+#7 D:\www\campus\vendor\framework\web\actions\CInlineAction.php(49): SiteController->actionCreate()
+#8 D:\www\campus\vendor\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 D:\www\campus\vendor\framework\web\CController.php(286): SiteController->runAction()
+#10 D:\www\campus\vendor\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#11 D:\www\campus\vendor\framework\web\CWebApplication.php(282): SiteController->run()
+#12 D:\www\campus\vendor\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 D:\www\campus\vendor\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\www\campus\applications\webservice\index.php(8): CWebApplication->run()
+REQUEST_URI=/site/create
+2014/01/21 23:20:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системі не вдалося знайти запитувану дію "images".' in D:\www\campus\vendor\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\campus\vendor\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\www\campus\vendor\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\www\campus\vendor\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/pin...')
+#3 D:\www\campus\vendor\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/pin.png
+HTTP_REFERER=http://campus.dev/site/create
 ---
-2014/01/24 13:58:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Неможливо обробити запит "img/images.jpg".' in D:\www\campus\vendor\framework\web\CWebApplication.php:280
+2014/01/21 23:20:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системі не вдалося знайти запитувану дію "images".' in D:\www\campus\vendor\framework\web\CController.php:483
 Stack trace:
-#0 D:\www\campus\vendor\framework\web\CWebApplication.php(135): CWebApplication->runController('img/images.jpg')
-#1 D:\www\campus\vendor\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#2 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
-#3 {main}
-REQUEST_URI=/img/images.jpg
+#0 D:\www\campus\vendor\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\www\campus\vendor\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\www\campus\vendor\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/pro...')
+#3 D:\www\campus\vendor\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/progressbar.gif
+HTTP_REFERER=http://campus.dev/site/create
 ---
-2014/01/24 13:58:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Неможливо обробити запит "img/images.jpg".' in D:\www\campus\vendor\framework\web\CWebApplication.php:280
+2014/01/21 23:20:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системі не вдалося знайти запитувану дію "images".' in D:\www\campus\vendor\framework\web\CController.php:483
 Stack trace:
-#0 D:\www\campus\vendor\framework\web\CWebApplication.php(135): CWebApplication->runController('img/images.jpg')
-#1 D:\www\campus\vendor\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#2 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
-#3 {main}
-REQUEST_URI=/img/images.jpg
+#0 D:\www\campus\vendor\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\www\campus\vendor\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\www\campus\vendor\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/del...')
+#3 D:\www\campus\vendor\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/delete.png
+HTTP_REFERER=http://campus.dev/site/create
 ---
-2014/01/24 13:58:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Неможливо обробити запит "img/images.jpg".' in D:\www\campus\vendor\framework\web\CWebApplication.php:280
+2014/01/21 23:21:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системі не вдалося знайти запитувану дію "images".' in D:\www\campus\vendor\framework\web\CController.php:483
 Stack trace:
-#0 D:\www\campus\vendor\framework\web\CWebApplication.php(135): CWebApplication->runController('img/images.jpg')
-#1 D:\www\campus\vendor\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#0 D:\www\campus\vendor\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\www\campus\vendor\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\www\campus\vendor\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/pin...')
+#3 D:\www\campus\vendor\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/pin.png
+HTTP_REFERER=http://campus.dev/site/create
+---
+2014/01/21 23:21:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системі не вдалося знайти запитувану дію "images".' in D:\www\campus\vendor\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\campus\vendor\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\www\campus\vendor\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\www\campus\vendor\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/pro...')
+#3 D:\www\campus\vendor\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/progressbar.gif
+HTTP_REFERER=http://campus.dev/site/create
+---
+2014/01/21 23:21:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системі не вдалося знайти запитувану дію "images".' in D:\www\campus\vendor\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\campus\vendor\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\www\campus\vendor\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\www\campus\vendor\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/del...')
+#3 D:\www\campus\vendor\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/delete.png
+HTTP_REFERER=http://campus.dev/site/create
+---
+2014/01/21 23:23:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системі не вдалося знайти запитувану дію "images".' in D:\www\campus\vendor\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\campus\vendor\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\www\campus\vendor\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\www\campus\vendor\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/pin...')
+#3 D:\www\campus\vendor\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/pin.png
+HTTP_REFERER=http://campus.dev/site/create
+---
+2014/01/21 23:23:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системі не вдалося знайти запитувану дію "images".' in D:\www\campus\vendor\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\campus\vendor\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\www\campus\vendor\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\www\campus\vendor\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/pro...')
+#3 D:\www\campus\vendor\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/progressbar.gif
+HTTP_REFERER=http://campus.dev/site/create
+---
+2014/01/21 23:23:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системі не вдалося знайти запитувану дію "images".' in D:\www\campus\vendor\framework\web\CController.php:483
+Stack trace:
+#0 D:\www\campus\vendor\framework\web\CController.php(270): CController->missingAction('images')
+#1 D:\www\campus\vendor\framework\web\CWebApplication.php(282): CController->run('images')
+#2 D:\www\campus\vendor\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/del...')
+#3 D:\www\campus\vendor\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/delete.png
+HTTP_REFERER=http://campus.dev/site/create
+---
+2014/01/21 23:24:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Неможливо обробити запит "images/pin.png".' in D:\www\campus\vendor\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\campus\vendor\framework\web\CWebApplication.php(141): CWebApplication->runController('images/pin.png')
+#1 D:\www\campus\vendor\framework\base\CApplication.php(169): CWebApplication->processRequest()
 #2 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
 #3 {main}
-REQUEST_URI=/img/images.jpg
+REQUEST_URI=/images/pin.png
+HTTP_REFERER=http://campus.dev/site/create
+---
+2014/01/21 23:24:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Неможливо обробити запит "images/delete.png".' in D:\www\campus\vendor\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\campus\vendor\framework\web\CWebApplication.php(141): CWebApplication->runController('images/delete.p...')
+#1 D:\www\campus\vendor\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/delete.png
+HTTP_REFERER=http://campus.dev/site/create
+---
+2014/01/21 23:24:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Неможливо обробити запит "images/progressbar.gif".' in D:\www\campus\vendor\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\campus\vendor\framework\web\CWebApplication.php(141): CWebApplication->runController('images/progress...')
+#1 D:\www\campus\vendor\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\campus\applications\webservice\index.php(8): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/progressbar.gif
+HTTP_REFERER=http://campus.dev/site/create
 ---
